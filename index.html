@@ -82,6 +82,7 @@
                     <a href="#beranda" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-900 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition">Beranda</a>
                     <a href="#profil" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-900 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition">Profil</a>
                     <a href="#visimisi" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-900 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition">Visi & Misi</a>
+                    <a href="#mars" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-900 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition">Mars Sekolah</a>
                     <a href="#berita" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-900 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition">Berita</a>
                     <a href="#ekskul" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-900 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition">Ekstrakurikuler</a>
                     <a href="#galeri" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-900 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition">Galeri</a>
@@ -116,6 +117,7 @@
             <a href="#beranda" class="block px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-900 font-medium">Beranda</a>
             <a href="#profil" class="block px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-900 font-medium">Profil</a>
             <a href="#visimisi" class="block px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-900 font-medium">Visi & Misi</a>
+            <a href="#mars" class="block px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-900 font-medium">Mars Sekolah</a>
             <a href="#berita" class="block px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-900 font-medium">Berita</a>
             <a href="#ekskul" class="block px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-900 font-medium">Ekstrakurikuler</a>
             <a href="#galeri" class="block px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-900 font-medium">Galeri</a>
@@ -325,8 +327,33 @@
         </div>
     </section>
 
+    <!-- VIDEO MARS SMPN 8 TENGGARONG -->
+    <section id="mars" class="py-16 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-blue-900 dark:text-blue-400 font-bold text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/50 px-3 py-1 rounded-full">Mars Sekolah</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Mars SMP Negeri 8 Tenggarong</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Dengarkan dan saksikan video mars resmi SMP Negeri 8 Tenggarong.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg bg-black aspect-video">
+                    <video controls class="w-full h-full object-contain">
+                        <source src="video_1.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                </div>
+                <div class="mt-6 text-center">
+                    <p class="text-slate-600 dark:text-slate-300 text-sm italic">
+                        "Mars SMP Negeri 8 Tenggarong - Semangat kebanggaan dan motivasi bagi seluruh siswa dan guru."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- BERITA & PENGUMUMAN TERBARU -->
-    <section id="berita" class="py-16 bg-slate-50 dark:bg-slate-950">
+    <section id="berita" class="py-16 bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
                 <div>
@@ -342,7 +369,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Artikel 1 -->
-                <div class="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col group hover:-translate-y-1 transition duration-300">
+                <div class="bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col group hover:-translate-y-1 transition duration-300">
                     <div class="relative overflow-hidden h-52">
                         <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Kegiatan+Pramuka" alt="Pramuka" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-blue-900 text-white text-xs font-bold px-3 py-1 rounded-full">Kegiatan Siswa</span>
@@ -355,7 +382,7 @@
                             <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Perjusami Pramuka SMPN 8 Tenggarong Sukses Digelar</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3">Perkemahan Jumat Sabtu Minggu (Perjusami) melatih kemandirian, kedisiplinan, serta kerja sama tim seluruh siswa kelas VII dan VIII.</p>
                         </div>
-                        <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                        <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
                             <span class="text-xs font-medium text-slate-500 dark:text-slate-400">Oleh Admin Humas</span>
                             <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold text-sm hover:underline">Baca Selengkapnya</a>
                         </div>
@@ -363,7 +390,7 @@
                 </div>
 
                 <!-- Artikel 2 -->
-                <div class="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col group hover:-translate-y-1 transition duration-300">
+                <div class="bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col group hover:-translate-y-1 transition duration-300">
                     <div class="relative overflow-hidden h-52">
                         <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Prestasi+Siswa" alt="Prestasi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">Prestasi</span>
@@ -376,7 +403,7 @@
                             <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Siswa SMPN 8 Tenggarong Juara 1 Lomba Seni Tari Tingkat Kukar</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3">Tim kesenian tradisional sekolah kembali menorehkan prestasi membanggakan pada ajang FLS2N tingkat kabupaten Kutai Kartanegara.</p>
                         </div>
-                        <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                        <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
                             <span class="text-xs font-medium text-slate-500 dark:text-slate-400">Oleh Tim Kesiswaan</span>
                             <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold text-sm hover:underline">Baca Selengkapnya</a>
                         </div>
@@ -384,7 +411,7 @@
                 </div>
 
                 <!-- Artikel 3 -->
-                <div class="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col group hover:-translate-y-1 transition duration-300">
+                <div class="bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col group hover:-translate-y-1 transition duration-300">
                     <div class="relative overflow-hidden h-52">
                         <img src="https://placehold.co/600x400/d97706/ffffff?text=Info+PPDB" alt="PPDB" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full">Pengumuman</span>
@@ -397,7 +424,7 @@
                             <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Sosialisasi Jalur Zonasi dan Afirmasi PPDB Tahun Ajaran Baru</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3">Pihak sekolah mengumumkan persyaratan lengkap berkas administrasi bagi calon peserta didik baru gelombang pertama.</p>
                         </div>
-                        <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                        <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
                             <span class="text-xs font-medium text-slate-500 dark:text-slate-400">Oleh Panitia PPDB</span>
                             <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold text-sm hover:underline">Baca Selengkapnya</a>
                         </div>
@@ -408,7 +435,7 @@
     </section>
 
     <!-- EKSTRAKURIKULER -->
-    <section id="ekskul" class="py-16 bg-white dark:bg-slate-900">
+    <section id="ekskul" class="py-16 bg-slate-50 dark:bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-blue-900 dark:text-blue-400 font-bold text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/50 px-3 py-1 rounded-full">Pengembangan Bakat</span>
@@ -418,7 +445,7 @@
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <!-- Ekskul 1 (Pramuka) -->
-                <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
+                <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
                     <div class="w-20 h-20 mx-auto bg-blue-100 dark:bg-blue-900/50 group-hover:bg-white/20 text-blue-900 dark:text-blue-400 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-4 transition">
                         <i class="fa-solid fa-compass"></i>
                     </div>
@@ -427,7 +454,7 @@
                 </div>
                 
                 <!-- Ekskul 2 (Paskibra) -->
-                <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
+                <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
                     <div class="w-20 h-20 mx-auto bg-white border border-slate-200 dark:border-slate-700 rounded-2xl flex items-center justify-center overflow-hidden p-1.5 mb-4 shadow-sm group-hover:scale-105 transition-transform duration-300">
                         <img src="logo paskib.jpeg" alt="Logo Paskibra SMPN 8 Tenggarong" class="w-full h-full object-contain">
                     </div>
@@ -436,7 +463,7 @@
                 </div>
 
                 <!-- Ekskul 3 (Futsal) -->
-                <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
+                <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
                     <div class="w-20 h-20 mx-auto bg-blue-100 dark:bg-blue-900/50 group-hover:bg-white/20 text-blue-900 dark:text-blue-400 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-4 transition">
                         <i class="fa-solid fa-futbol"></i>
                     </div>
@@ -445,7 +472,7 @@
                 </div>
 
                 <!-- Ekskul 4 (Seni Tari) -->
-                <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
+                <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
                     <div class="w-20 h-20 mx-auto bg-amber-100 dark:bg-amber-900/50 group-hover:bg-white/20 text-amber-600 dark:text-amber-400 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-4 transition">
                         <i class="fa-solid fa-masks-theater"></i>
                     </div>
@@ -454,7 +481,7 @@
                 </div>
 
                 <!-- Ekskul 5 (PMR) -->
-                <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
+                <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
                     <div class="w-20 h-20 mx-auto bg-rose-100 dark:bg-rose-900/50 group-hover:bg-white/20 text-rose-600 dark:text-rose-400 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-4 transition">
                         <i class="fa-solid fa-kit-medical"></i>
                     </div>
@@ -463,7 +490,7 @@
                 </div>
 
                 <!-- Ekskul 6 (Rohis) -->
-                <div class="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
+                <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center hover:bg-blue-900 hover:text-white transition group flex flex-col items-center justify-center">
                     <div class="w-20 h-20 mx-auto bg-indigo-100 dark:bg-indigo-900/50 group-hover:bg-white/20 text-indigo-600 dark:text-indigo-400 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-4 transition">
                         <i class="fa-solid fa-book-quran"></i>
                     </div>
@@ -475,7 +502,7 @@
     </section>
 
     <!-- GALERI KEGIATAN -->
-    <section id="galeri" class="py-16 bg-slate-50 dark:bg-slate-950">
+    <section id="galeri" class="py-16 bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-blue-900 dark:text-blue-400 font-bold text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/50 px-3 py-1 rounded-full">Dokumentasi</span>
@@ -543,7 +570,7 @@
     </section>
 
     <!-- INFORMASI PPDB -->
-    <section id="ppdb" class="py-16 bg-white dark:bg-slate-900">
+    <section id="ppdb" class="py-16 bg-slate-50 dark:bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-blue-900 to-slate-900 rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-2xl relative overflow-hidden">
                 <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -595,7 +622,7 @@
     </section>
 
     <!-- KONTAK DAN LOKASI -->
-    <section id="kontak" class="py-16 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+    <section id="kontak" class="py-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-blue-900 dark:text-blue-400 font-bold text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/50 px-3 py-1 rounded-full">Hubungi Kami</span>
@@ -605,7 +632,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="space-y-6">
-                    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+                    <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
                         <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 text-blue-900 dark:text-blue-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
@@ -616,7 +643,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+                    <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
                         <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
@@ -626,7 +653,7 @@
                             <p class="text-slate-600 dark:text-slate-300 text-sm">Telepon: (0541) 6612345</p>
                         </div>
                     </div>
-                    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+                    <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
                         <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
                             <i class="fa-solid fa-clock"></i>
                         </div>
@@ -638,7 +665,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 h-[400px] relative overflow-hidden flex flex-col items-center justify-center bg-slate-100">
+                <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 h-[400px] relative overflow-hidden flex flex-col items-center justify-center bg-slate-100">
                     <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('https://placehold.co/800x600/e2e8f0/475569?text=Peta+Lokasi+SMPN+8+Tenggarong+(Maluhu)');"></div>
                     <div class="relative z-10 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-6 rounded-2xl shadow-xl text-center max-w-sm border border-slate-200 dark:border-slate-800">
                         <div class="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl shadow-md">
@@ -676,6 +703,7 @@
                         <li><a href="#beranda" class="hover:text-blue-400 transition">Beranda</a></li>
                         <li><a href="#profil" class="hover:text-blue-400 transition">Profil Kepala Sekolah</a></li>
                         <li><a href="#visimisi" class="hover:text-blue-400 transition">Visi & Misi</a></li>
+                        <li><a href="#mars" class="hover:text-blue-400 transition">Mars Sekolah</a></li>
                         <li><a href="#berita" class="hover:text-blue-400 transition">Berita & Artikel</a></li>
                         <li><a href="#ekskul" class="hover:text-blue-400 transition">Ekstrakurikuler</a></li>
                     </ul>
