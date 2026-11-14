@@ -640,7 +640,7 @@
                         <div>
                             <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-1">Alamat Lengkap</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                                Jl. Arjuna Rt. 13, Kelurahan Maluhu, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara, Provinsi Kalimantan Timur, Kode Pos 75511.
+                                Jl. Arjuna Rt. 13, Kelurahan Maluhu, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara, Provinsi Kalimantan Timur, Kode Pos 75513.
                             </p>
                         </div>
                     </div>
@@ -666,16 +666,28 @@
                     </div>
                 </div>
 
-                <div class="bg-slate-50 dark:bg-slate-950 p-4 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 h-[400px] relative overflow-hidden flex flex-col items-center justify-center bg-slate-100">
-                    <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('https://placehold.co/800x600/e2e8f0/475569?text=Peta+Lokasi+SMPN+8+Tenggarong+(Maluhu)');"></div>
-                    <div class="relative z-10 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-6 rounded-2xl shadow-xl text-center max-w-sm border border-slate-200 dark:border-slate-800">
-                        <div class="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl shadow-md">
-                            <i class="fa-solid fa-map-location-dot"></i>
+                <!-- GOOGLE MAPS EMBED INTERAKTIF YANG AKURAT -->
+                <div class="bg-slate-50 dark:bg-slate-950 p-3 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 h-[400px] relative overflow-hidden flex flex-col">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=-0.4079033,116.94742&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full rounded-2xl border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Peta Lokasi SMP Negeri 8 Tenggarong">
+                    </iframe>
+                    <div class="absolute bottom-6 left-6 right-6 z-10 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-4 rounded-2xl shadow-lg flex items-center justify-between border border-slate-200 dark:border-slate-800">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-900 text-white rounded-xl flex items-center justify-center text-lg shadow">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs sm:text-sm text-slate-900 dark:text-white">SMP Negeri 8 Tenggarong</h4>
+                                <p class="text-[11px] text-slate-600 dark:text-slate-300">Jl. Arjuna, Kel. Maluhu</p>
+                            </div>
                         </div>
-                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">SMP Negeri 8 Tenggarong</h4>
-                        <p class="text-xs text-slate-600 dark:text-slate-300 mb-4">Jl. Arjuna Rt. 13, Kel. Maluhu, Kec. Tenggarong</p>
-                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="bg-blue-900 hover:bg-blue-950 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
-                            Buka di Google Maps <i class="fa-solid fa-external-link ml-1"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=-0.4079033,116.94742" target="_blank" rel="noopener noreferrer" class="bg-blue-900 hover:bg-blue-950 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition shadow shrink-0">
+                            Buka Maps <i class="fa-solid fa-external-link ml-1"></i>
                         </a>
                     </div>
                 </div>
