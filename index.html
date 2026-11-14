@@ -47,8 +47,12 @@
     <div class="bg-darkslate text-slate-300 text-xs sm:text-sm py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-4">
-                <span><i class="fa-solid fa-envelope text-amber-400 mr-1.5"></i> info@smpn8tenggarong.sch.id</span>
-                <span><i class="fa-solid fa-phone text-amber-400 mr-1.5"></i> (0541) 6612345</span>
+                <a href="mailto:smp.negeri8tenggarong@gmail.com" class="hover:text-amber-400 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-amber-400"></i> smp.negeri8tenggarong@gmail.com
+                </a>
+                <a href="tel:082343135943" class="hover:text-amber-400 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-amber-400"></i> 0823-4313-5943
+                </a>
             </div>
             <div class="flex items-center gap-3">
                 <span class="bg-blue-800 text-white text-xs px-2.5 py-0.5 rounded-full font-medium">NPSN: 30405764</span>
@@ -632,42 +636,74 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div class="space-y-6">
-                    <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
-                        <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 text-blue-900 dark:text-blue-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
+                <!-- Kolom Informasi Kontak -->
+                <div class="space-y-4">
+                    <!-- Alamat -->
+                    <div class="bg-slate-50 dark:bg-slate-950 p-5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 text-blue-900 dark:text-blue-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-0.5">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-1">Alamat Lengkap</h3>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base mb-1">Alamat Sekolah</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                                Jl. Arjuna Rt. 13, Kelurahan Maluhu, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara, Provinsi Kalimantan Timur, Kode Pos 75517.
+                                Jl. Arjuna Rt. 13, Kelurahan Maluhu, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara, Kalimantan Timur 75517.
                             </p>
                         </div>
                     </div>
-                    <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
-                        <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
+
+                    <!-- Email -->
+                    <div class="bg-slate-50 dark:bg-slate-950 p-5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-0.5">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-1">Email & Telepon</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm">Email: smp.negeri8tenggarong@gmail.com</p>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm">Telepon: 082343135943</p>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base mb-1">Email Resmi</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm">
+                                <a href="mailto:smp.negeri8tenggarong@gmail.com" class="text-blue-900 dark:text-blue-400 hover:underline font-medium">smp.negeri8tenggarong@gmail.com</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-3xl shadow-md border border-slate-100 dark:border-slate-800 flex items-start gap-4">
-                        <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-1">
+
+                    <!-- Telepon -->
+                    <div class="bg-slate-50 dark:bg-slate-950 p-5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-0.5">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base mb-1">Telepon</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm">
+                                <a href="tel:082343135943" class="text-blue-900 dark:text-blue-400 hover:underline font-medium">0823-4313-5943</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Jam Operasional -->
+                    <div class="bg-slate-50 dark:bg-slate-950 p-5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-2xl flex items-center justify-center text-xl shrink-0 mt-0.5">
                             <i class="fa-solid fa-clock"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-1">Jam Operasional</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm">Senin - Kamis: 07.15 - 14.00 Wita</p>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm">Jumat - Sabtu: 07.15 - 11.30 Wita</p>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base mb-1">Jam Operasional Sekolah</h3>
+                            <div class="space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                                <div class="flex justify-between gap-4">
+                                    <span class="font-medium text-slate-700 dark:text-slate-200">Senin - Kamis:</span>
+                                    <span>07.15 - 14.00 WITA</span>
+                                </div>
+                                <div class="flex justify-between gap-4">
+                                    <span class="font-medium text-slate-700 dark:text-slate-200">Jumat - Sabtu:</span>
+                                    <span>07.15 - 11.30 WITA</span>
+                                </div>
+                                <div class="flex justify-between gap-4 text-xs text-slate-500 dark:text-slate-400 pt-1 border-t border-slate-200 dark:border-slate-800">
+                                    <span>Minggu / Hari Libur Nasional:</span>
+                                    <span>Tutup</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- GOOGLE MAPS EMBED INTERAKTIF YANG AKURAT -->
-                <div class="bg-slate-50 dark:bg-slate-950 p-3 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 h-[400px] relative overflow-hidden flex flex-col">
+                <div class="bg-slate-50 dark:bg-slate-950 p-3 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 h-[480px] relative overflow-hidden flex flex-col">
                     <iframe 
                         src="https://maps.google.com/maps?q=-0.4079033,116.94742&t=&z=17&ie=UTF8&iwloc=&output=embed" 
                         class="w-full h-full rounded-2xl border-0" 
