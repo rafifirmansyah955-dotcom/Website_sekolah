@@ -355,7 +355,7 @@
         </div>
     </section>
 
-    <!-- BERITA & PENGUMUMAN TERBARU (DIPERBARUI DENGAN FOTO & UKURAN GAMBAR YANG LEBIH RAPI SERTA FIT) -->
+    <!-- BERITA & PENGUMUMAN TERBARU (DENGAN HALAMAN DETAIL ARTIKEL LENGKAP) -->
     <section id="berita" class="py-12 sm:py-16 bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-12 gap-4">
@@ -364,17 +364,15 @@
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Berita & Pengumuman Sekolah</h2>
                 </div>
                 <div>
-                    <button class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold px-4 sm:px-5 py-2.5 rounded-xl transition text-sm shadow-sm flex items-center gap-2">
-                        <span>Lihat Semua Berita</span> <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 italic">Klik "Baca Selengkapnya" untuk membuka halaman artikel lengkap</span>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Artikel 1: Juara 1 Cerdas Cermat Gema VI Mahakam -->
                 <div class="bg-slate-50 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-1 transition duration-300">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-800">
-                        <img src="juara1lombacerdascermatVIMAHAKAM.jpeg" alt="Juara 1 Cerdas Cermat Gema VI Mahakam" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(1)">
+                        <img src="juara1lombacerdascermatVIMAHAKAM.jpeg" alt="Juara 1 Cerdas Cermat Gema VI Mahakam" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Prestasi Akademik</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -382,20 +380,20 @@
                             <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
                                 <i class="fa-regular fa-calendar"></i> 13 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Nur Shifa, Zahra Adelia & Nafisya Putri Raih Juara 1 Cerdas Cermat Gema VI Mahakam</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(1)">Nur Shifa, Zahra Adelia & Nafisya Putri Raih Juara 1 Cerdas Cermat Gema VI Mahakam</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Tim cerdas cermat SMPN 8 Tenggarong berhasil menorehkan prestasi gemilang dan keluar sebagai Juara 1 dalam ajang kompetisi Gema VI Mahakam 2026.</p>
                         </div>
                         <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs">
                             <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Tim Prestasi</span>
-                            <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold hover:underline">Baca Selengkapnya</a>
+                            <button onclick="openArticle(1)" class="text-blue-900 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 2: Amabel Syaima Juara 2 Atletik Putri O2SN -->
                 <div class="bg-slate-50 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-1 transition duration-300">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-800">
-                        <img src="juara2lombaatletikputri02sn.jpeg" alt="Amabel Syaima Juara 2 Atletik Putri O2SN" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(2)">
+                        <img src="juara2lombaatletikputri02sn.jpeg" alt="Amabel Syaima Juara 2 Atletik Putri O2SN" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Prestasi Olahraga</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -403,20 +401,20 @@
                             <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
                                 <i class="fa-regular fa-calendar"></i> 10 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Amabel Syaima Sukses Raih Juara 2 Atletik Putri O2SN Tingkat Kabupaten Kukar</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(2)">Amabel Syaima Sukses Raih Juara 2 Atletik Putri O2SN Tingkat Kabupaten Kukar</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Prestasi membanggakan ditorehkan oleh Amabel Syaima yang berhasil meraih Juara 2 Atletik Putri pada ajang O2SN tingkat SMP Kabupaten Kutai Kartanegara tahun 2026.</p>
                         </div>
                         <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs">
                             <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Tim Olahraga</span>
-                            <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold hover:underline">Baca Selengkapnya</a>
+                            <button onclick="openArticle(2)" class="text-blue-900 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 3: Juara Harapan 2 Ilustrasi FLS2N -->
                 <div class="bg-slate-50 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-1 transition duration-300">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-800">
-                        <img src="juara2lombailustrasifls3n.jpeg" alt="Juara Harapan 2 Ilustrasi FLS3N" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(3)">
+                        <img src="juara2lombailustrasifls3n.jpeg" alt="Juara Harapan 2 Ilustrasi FLS3N" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Seni & Kreativitas</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -424,20 +422,20 @@
                             <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
                                 <i class="fa-regular fa-calendar"></i> 06 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Cut Maharani Putri Sukses Meraih Juara Harapan 2 Ilustrasi FLS2N Kukar</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(3)">Cut Maharani Putri Sukses Meraih Juara Harapan 2 Ilustrasi FLS2N Kukar</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Karya seni ilustrasi terbaik mengantarkan Cut Maharani Putri meraih Juara Harapan 2 pada ajang FLS2N Tingkat Kabupaten Kutai Kartanegara.</p>
                         </div>
                         <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs">
                             <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Bidang Seni</span>
-                            <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold hover:underline">Baca Selengkapnya</a>
+                            <button onclick="openArticle(3)" class="text-blue-900 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 4: Juara 2 Mendongeng FLS2N -->
                 <div class="bg-slate-50 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-1 transition duration-300">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-800">
-                        <img src="rafaelradityajuara2mendongengfls3n.jpeg" alt="Juara 2 Mendongeng FLS3N" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(4)">
+                        <img src="rafaelradityajuara2mendongengfls3n.jpeg" alt="Juara 2 Mendongeng FLS3N" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Seni & Sastra</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -445,20 +443,20 @@
                             <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
                                 <i class="fa-regular fa-calendar"></i> 06 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Rafael Raditya Tampilkan Performa Memukau & Raih Juara 2 Mendongeng FLS2N Kukar</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(4)">Rafael Raditya Tampilkan Performa Memukau & Raih Juara 2 Mendongeng FLS2N Kukar</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Dengan penjiwaan dan ekspresi luar biasa, Rafael Raditya sukses menyabet Juara 2 Lomba Mendongeng FLS2N tingkat Kabupaten Kutai Kartanegara.</p>
                         </div>
                         <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs">
                             <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Bidang Sastra</span>
-                            <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold hover:underline">Baca Selengkapnya</a>
+                            <button onclick="openArticle(4)" class="text-blue-900 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 5: Zahra Adelia Putri Lulus di SMAN 10 Samarinda -->
                 <div class="bg-slate-50 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-1 transition duration-300">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-800">
-                        <img src="zahraadeliaputrilulusdisma10samarinda.jpeg" alt="Zahra Adelia Putri Diterima di SMAN 10 Samarinda" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(5)">
+                        <img src="zahraadeliaputrilulusdisma10samarinda.jpeg" alt="Zahra Adelia Putri Diterima di SMAN 10 Samarinda" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition duration-500">
                         <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Kelulusan</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -466,12 +464,12 @@
                             <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
                                 <i class="fa-regular fa-calendar"></i> 04 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition">Selamat & Sukses Zahra Adelia Putri Atas Diterimanya di SMAN 10 Samarinda</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-900 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(5)">Selamat & Sukses Zahra Adelia Putri Atas Diterimanya di SMAN 10 Samarinda</h3>
                             <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Kabar membanggakan dari alumni SMPN 8 Tenggarong tahun ajaran 2025/2026 yang berhasil diterima di sekolah unggulan SMA Negeri 10 Samarinda.</p>
                         </div>
                         <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs">
                             <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Humas Sekolah</span>
-                            <a href="#berita" class="text-blue-900 dark:text-blue-400 font-bold hover:underline">Baca Selengkapnya</a>
+                            <button onclick="openArticle(5)" class="text-blue-900 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
@@ -827,6 +825,23 @@
         </div>
     </section>
 
+    <!-- MODAL HALAMAN DETAIL ARTIKEL BERITA -->
+    <div id="article-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md hidden p-4 overflow-y-auto">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl relative transform transition-all border border-slate-200 dark:border-slate-800 my-8 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeArticle()" class="absolute top-5 right-5 z-20 w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition text-lg font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="article-content-container">
+                <!-- Konten dinamis akan dimuat di sini melalui JavaScript -->
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 flex justify-end">
+                <button onclick="closeArticle()" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
+                    Tutup & Kembali ke Berita
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="bg-darkslate text-slate-400 py-10 sm:py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -872,7 +887,7 @@
         </div>
     </footer>
 
-    <!-- MODAL CUSTOM -->
+    <!-- MODAL CUSTOM PPDB -->
     <div id="ppdb-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden p-4">
         <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative transform transition-all border border-slate-200 dark:border-slate-800">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 text-xl font-bold">
@@ -893,8 +908,137 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT INTERAKTIF -->
+    <!-- JAVASCRIPT INTERAKTIF & DATA ARTIKEL LENGKAP -->
     <script>
+        // Database artikel berita lengkap
+        const articlesData = {
+            1: {
+                title: "Nur Shifa, Zahra Adelia & Nafisya Putri Raih Juara 1 Cerdas Cermat Gema VI Mahakam",
+                date: "13 Mei 2026",
+                category: "Prestasi Akademik",
+                categoryBg: "bg-amber-600",
+                author: "Tim Prestasi & Humas Sekolah",
+                image: "juara1lombacerdascermatVIMAHAKAM.jpeg",
+                content: `
+                    <p class="mb-4">Tenggarong — Prestasi membanggakan kembali ditorehkan oleh peserta didik SMP Negeri 8 Tenggarong. Tim cerdas cermat yang beranggotakan Nur Shifa, Zahra Adelia, dan Nafisya Putri sukses keluar sebagai <strong>Juara 1</strong> dalam ajang bergengsi kompetisi Gema VI Mahakam tahun 2026.</p>
+                    <p class="mb-4">Kompetisi yang diikuti oleh puluhan sekolah tingkat menengah pertama dari berbagai wilayah ini menguji ketangkasan berpikir, wawasan luas, serta kecepatan dalam menjawab soal-soal di bidang Matematika, IPA, IPS, dan Pengetahuan Umum.</p>
+                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Persiapan Intensif dan Kerja Sama Tim</h4>
+                    <p class="mb-4">Keberhasilan ini tidak diperoleh dengan mudah. Di bawah bimbingan guru pembimbing sekolah, ketiga siswi ini menjalani latihan intensif selama berpekan-pekan sepulang sekolah. Koordinasi yang solid dan ketenangan mental saat menghadapi babak final menjadi kunci utama kemenangan mereka.</p>
+                    <blockquote class="border-l-4 border-amber-500 pl-4 italic my-6 text-slate-600 dark:text-slate-300">
+                        "Kami sangat bersyukur dan bangga atas kerja keras anak-anak kami. Ini membuktikan bahwa siswa-siswi SMPN 8 Tenggarong mampu bersaing dan unggul di tingkat regional," ujar Kepala Sekolah Syaifullah, S.Pd.
+                    </blockquote>
+                    <p>Semoga prestasi gemilang ini dapat menjadi inspirasi dan motivasi bagi seluruh siswa SMP Negeri 8 Tenggarong untuk terus giat belajar dan berprestasi di berbagai bidang.</p>
+                `
+            },
+            2: {
+                title: "Amabel Syaima Sukses Raih Juara 2 Atletik Putri O2SN Tingkat Kabupaten Kukar",
+                date: "10 Mei 2026",
+                category: "Prestasi Olahraga",
+                categoryBg: "bg-blue-600",
+                author: "Tim Olahraga & Kesiswaan",
+                image: "juara2lombaatletikputri02sn.jpeg",
+                content: `
+                    <p class="mb-4">Tenggarong — Semangat juang tinggi ditunjukkan oleh Amabel Syaima, siswi utusan SMP Negeri 8 Tenggarong, yang berhasil menyabet gelar <strong>Juara 2 Atletik Putri</strong> pada ajang Olimpiade Olahraga Siswa Nasional (O2SN) tingkat Kabupaten Kutai Kartanegara tahun 2026.</p>
+                    <p class="mb-4">Bertanding di stadion utama Kabupaten Kukar, Amabel menunjukkan ketahanan fisik, kecepatan lari, serta teknik yang matang dalam menghadapi atlet-atlet terbaik dari berbagai kecamatan.</p>
+                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Buah Dari Latihan Disiplin</h4>
+                    <p class="mb-4">Kepala Sekolah beserta dewan guru memberikan apresiasi tinggi atas dedikasi Amabel yang rutin berlatih fisik di lapangan sekolah setiap sore hari didampingi guru olahraga.</p>
+                    <p>Pencapaian ini semakin memperkuat nama SMPN 8 Tenggarong sebagai sekolah yang tidak hanya unggul secara akademik, tetapi juga melahirkan bibit-bibit atlet berbakat di bidang olahraga.</p>
+                `
+            },
+            3: {
+                title: "Cut Maharani Putri Sukses Meraih Juara Harapan 2 Ilustrasi FLS2N Kukar",
+                date: "06 Mei 2026",
+                category: "Seni & Kreativitas",
+                categoryBg: "bg-purple-600",
+                author: "Bidang Seni & Budaya",
+                image: "juara2lombailustrasifls3n.jpeg",
+                content: `
+                    <p class="mb-4">Tenggarong — Kreativitas tanpa batas kembali dibuktikan oleh Cut Maharani Putri. Melalui goresan tangan yang penuh makna dan estetika, ia berhasil meraih predikat <strong>Juara Harapan 2 Lomba Ilustrasi</strong> dalam Festival Lomba Seni Siswa Nasional (FLS2N) tingkat Kabupaten Kutai Kartanegara.</p>
+                    <p class="mb-4">Karya ilustrasi yang dibuat Cut Maharani mengangkat tema pelestarian budaya lokal berpadu dengan imajinasi masa depan, yang dinilai sangat memukau oleh dewan juri profesional.</p>
+                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Menggali Potensi Seni Rupa Siswa</h4>
+                    <p class="mb-4">Pihak sekolah senantiasa memfasilitasi bakat seni rupa dan desain siswa melalui kegiatan ekstrakurikuler seni rupa, sehingga siswa dapat menyalurkan ekspresi kreatif mereka ke ajang yang lebih tinggi.</p>
+                    <p>Selamat kepada Cut Maharani Putri atas prestasi membanggakan ini! Semoga terus berkarya dan mengharumkan nama sekolah.</p>
+                `
+            },
+            4: {
+                title: "Rafael Raditya Tampilkan Performa Memukau & Raih Juara 2 Mendongeng FLS2N Kukar",
+                date: "06 Mei 2026",
+                category: "Seni & Sastra",
+                categoryBg: "bg-indigo-600",
+                author: "Bidang Sastra & Bahasa",
+                image: "rafaelradityajuara2mendongengfls3n.jpeg",
+                content: `
+                    <p class="mb-4">Tenggarong — Suasana panggung FLS2N tingkat Kabupaten Kutai Kartanegara mendadak hidup ketika Rafael Raditya membawakan cerita rakyat dengan ekspresi dan penjiwaan yang luar biasa. Penampilan tersebut mengantarkannya meraih posisi <strong>Juara 2 Lomba Mendongeng</strong>.</p>
+                    <p class="mb-4">Dengan intonasi suara yang dinamis, mimik wajah yang ekspresif, serta penguasaan panggung yang matang, Rafael berhasil memikat hati para juri dan penonton yang hadir.</p>
+                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Melestarikan Sastra dan Budaya Lisan</h4>
+                    <p class="mb-4">Lomba mendongeng merupakan salah satu media efektif dalam menanamkan nilai moral sekaligus melestarikan cerita rakyat nusantara, khususnya budaya Kutai.</p>
+                    <p>Keluarga besar SMP Negeri 8 Tenggarong menyampaikan rasa bangga dan apresiasi mendalam atas pencapaian gemilang Rafael Raditya.</p>
+                `
+            },
+            5: {
+                title: "Selamat & Sukses Zahra Adelia Putri Atas Diterimanya di SMAN 10 Samarinda",
+                date: "04 Mei 2026",
+                category: "Kelulusan",
+                categoryBg: "bg-emerald-600",
+                author: "Humas Sekolah & Jaringan Alumni",
+                image: "zahraadeliaputrilulusdisma10samarinda.jpeg",
+                content: `
+                    <p class="mb-4">Tenggarong — Kabar gembira dan membanggakan datang dari salah satu siswi kelas akhir SMP Negeri 8 Tenggarong tahun ajaran 2025/2026, Zahra Adelia Putri, yang resmi dinyatakan lulus dan diterima di sekolah unggulan <strong>SMA Negeri 10 Samarinda</strong>.</p>
+                    <p class="mb-4">Keberhasilan ini diraih melalui proses seleksi akademik dan tes ketat yang bersaing dengan ratusan lulusan SMP terbaik dari berbagai kabupaten/kota di Kalimantan Timur.</p>
+                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Bukti Mutu Lulusan Berkualitas</h4>
+                    <p class="mb-4">Kepala SMPN 8 Tenggarong, Syaifullah, S.Pd., menyampaikan bahwa pencapaian ini merupakan bukti nyata dari dedikasi dewan guru dalam memberikan pembelajaran berkualitas serta pembentukan karakter siswa yang tangguh.</p>
+                    <p>Selamat kepada Zahra Adelia Putri! Semoga sukses menempuh jenjang pendidikan menengah atas dan terus mengukir prestasi gemilang di masa depan.</p>
+                `
+            }
+        };
+
+        // Fungsi Membuka Artikel Detail
+        function openArticle(id) {
+            const article = articlesData[id];
+            if (!article) return;
+
+            const container = document.getElementById('article-content-container');
+            container.innerHTML = `
+                <span class="${article.categoryBg} text-white text-xs font-bold px-3 py-1 rounded-full shadow-md inline-block mb-4">${article.category}</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-3 leading-tight">${article.title}</h2>
+                <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-6 flex items-center gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+                    <span><i class="fa-regular fa-calendar mr-1.5"></i> ${article.date}</span>
+                    <span><i class="fa-regular fa-user mr-1.5"></i> ${article.author}</span>
+                </div>
+                <div class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg mb-6 bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2">
+                    <img src="${article.image}" alt="${article.title}" class="w-full h-full object-contain rounded-xl">
+                </div>
+                <div class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-4">
+                    ${article.content}
+                </div>
+            `;
+
+            document.getElementById('article-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fungsi Menutup Artikel Detail
+        function closeArticle() {
+            document.getElementById('article-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Tutup modal dengan tombol ESC atau klik di luar modal
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeArticle();
+                closeModal();
+            }
+        });
+
+        window.addEventListener('click', (e) => {
+            const articleModal = document.getElementById('article-modal');
+            if (e.target === articleModal) {
+                closeArticle();
+            }
+        });
+
+        // Toggle Mobile Menu
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -908,6 +1052,7 @@
             });
         });
 
+        // Theme Toggle Script
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeToggleMobileBtn = document.getElementById('theme-toggle-mobile');
         const themeIcon = document.getElementById('theme-icon');
@@ -939,6 +1084,7 @@
         themeToggleBtn.addEventListener('click', toggleTheme);
         themeToggleMobileBtn.addEventListener('click', toggleTheme);
 
+        // PPDB Modal Functions
         function openModal() {
             document.getElementById('ppdb-modal').classList.remove('hidden');
         }
@@ -946,13 +1092,6 @@
         function closeModal() {
             document.getElementById('ppdb-modal').classList.add('hidden');
         }
-
-        window.addEventListener('click', (e) => {
-            const modal = document.getElementById('ppdb-modal');
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
     </script>
 </body>
 </html>
