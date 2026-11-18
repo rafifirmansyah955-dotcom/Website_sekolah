@@ -240,43 +240,72 @@
         </div>
     </section>
 
-    <!-- STATISTIK & INFO UTAMA BAR (WITH ANIMATED COUNTERS) -->
+    <!-- STATISTIK & INFO UTAMA BAR (UPDATED DENGAN JUMLAH SISWA, KELAS, & ROMBEL) -->
     <section class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 sm:-mt-12 lg:-mt-14 mb-12 sm:mb-16">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3.5 sm:gap-4 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300">
-                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-50 dark:bg-blue-950/50 text-blue-900 dark:text-blue-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl font-bold shrink-0">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4">
+            <!-- NPSN -->
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-50 dark:bg-blue-950/50 text-blue-900 dark:text-blue-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-id-card"></i>
                 </div>
                 <div>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">NPSN Sekolah</p>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white counter" data-target="30405764">30405764</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">NPSN</p>
+                    <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">30405764</h3>
                 </div>
             </div>
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3.5 sm:gap-4 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 100ms;">
-                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl font-bold shrink-0">
+
+            <!-- Jumlah Siswa: 273 -->
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 80ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Jumlah Siswa</p>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white counter" data-target="273">0</h3>
+                </div>
+            </div>
+
+            <!-- Jumlah Kelas: 6 -->
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 160ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Jumlah Kelas</p>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white counter" data-target="6">0</h3>
+                </div>
+            </div>
+
+            <!-- Jumlah Rombel: 9 -->
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 240ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-50 dark:bg-purple-950/50 text-purple-600 dark:text-purple-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Rombel</p>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white counter" data-target="9">0</h3>
+                </div>
+            </div>
+
+            <!-- Akreditasi -->
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 320ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-rose-50 dark:bg-rose-950/50 text-rose-600 dark:text-rose-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Akreditasi</p>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white">B (Baik)</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Akreditasi</p>
+                    <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">B (Baik)</h3>
                 </div>
             </div>
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3.5 sm:gap-4 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 200ms;">
-                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl font-bold shrink-0">
-                    <i class="fa-solid fa-school"></i>
-                </div>
-                <div>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Status Sekolah</p>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white">Sekolah Negeri</h3>
-                </div>
-            </div>
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3.5 sm:gap-4 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 300ms;">
-                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-rose-50 dark:bg-rose-950/50 text-rose-600 dark:text-rose-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl font-bold shrink-0">
+
+            <!-- Lokasi -->
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 400ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Lokasi</p>
-                    <h3 class="text-sm sm:text-base font-bold text-slate-800 dark:text-white truncate" title="Jl. Arjuna Rt. 13, Maluhu, Tenggarong">Maluhu, Tenggarong</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Lokasi</p>
+                    <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white truncate" title="Maluhu, Tenggarong">Maluhu</h3>
                 </div>
             </div>
         </div>
@@ -309,7 +338,7 @@
                                 Assalamu’alaikum Warahmatullahi Wabarakatuh, Puji syukur senantiasa kita panjatkan ke hadirat Allah SWT karena atas limpahan rahmat dan karunia-Nya website resmi SMP Negeri 8 Tenggarong ini dapat hadir kembali untuk memenuhi kebutuhan informasi masyarakat luas.
                             </p>
                             <p>
-                                Di tengah pesatnya perkembangan era digital, kehadiran website sekolah ini menjadi sarana penting bagi kami untuk menyampaikan informasi seputar program pendidikan, kegiatan akademik maupun non-akademik, serta prestasi membanggakan yang diraih oleh peserta didik kami di Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.
+                                Dengan jumlah peserta didik sebanyak <strong>273 siswa</strong> yang tersebar di <strong>9 rombongan belajar</strong> dalam <strong>6 kelas</strong>, kami berkomitmen untuk terus meningkatkan mutu dan layanan pendidikan terbaik di Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.
                             </p>
                             <p class="font-medium text-slate-800 dark:text-slate-200">
                                 Mari bersama-sama kita wujudkan generasi muda yang cerdas, tangguh, berakhlak mulia, dan siap bersaing di masa depan.
@@ -1019,7 +1048,6 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
-                        // Optional: observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
@@ -1036,7 +1064,7 @@
                         observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.5 });
+            }, { threshold: 0.3 });
 
             const statSection = document.querySelector('.counter');
             if (statSection) {
@@ -1044,13 +1072,14 @@
             }
         });
 
-        // 2. Animated Counters
+        // 2. Animated Counters (Angka berjalan dari 0 ke nilai target)
         function startCounters() {
             const counters = document.querySelectorAll('.counter');
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
                 let current = 0;
-                const increment = target / 50;
+                const steps = 40;
+                const increment = target / steps;
                 const updateCounter = () => {
                     current += increment;
                     if (current < target) {
