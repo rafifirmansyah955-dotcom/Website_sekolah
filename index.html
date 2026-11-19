@@ -30,7 +30,7 @@
     </script>
     <style>
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(29, 78, 216, 0.94) 0%, rgba(14, 116, 144, 0.92) 50%, rgba(15, 23, 42, 0.94) 100%), url('https://placehold.co/1920x1080/1d4ed8/ffffff?text=SMPN+8+Tenggarong') center/cover no-repeat;
+            background: linear-gradient(135deg, rgba(23, 37, 84, 0.96) 0%, rgba(29, 78, 216, 0.92) 55%, rgba(15, 23, 42, 0.96) 100%), url('https://placehold.co/1920x1080/1d4ed8/ffffff?text=SMPN+8+Tenggarong') center/cover no-repeat;
         }
 
         /* Scroll Reveal Animation Base Classes */
@@ -101,14 +101,17 @@
             width: 10px;
         }
         ::-webkit-scrollbar-track {
-            background: #eff6ff;
+            background: #f1f5f9;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #020617;
         }
         ::-webkit-scrollbar-thumb {
-            background: #2563eb;
+            background: #1d4ed8;
             border-radius: 5px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #1d4ed8;
+            background: #1e40af;
         }
     </style>
     <script>
@@ -119,75 +122,75 @@
         }
     </script>
 </head>
-<body class="bg-sky-50/40 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
+<body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
 
     <!-- TOP BAR (Informasi Kontak & Sosmed) -->
-    <div class="bg-blue-900 text-blue-100 text-[11px] sm:text-sm py-2 px-3 sm:px-6 border-b border-blue-800">
+    <div class="bg-blue-950 dark:bg-slate-950 text-white text-[11px] sm:text-sm py-2 px-3 sm:px-6 border-b border-blue-900 dark:border-slate-800">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
             <div class="flex flex-wrap justify-center sm:justify-start items-center gap-3">
-                <a href="mailto:smp.negeri8tenggarong@gmail.com" onclick="showToast('Membuka aplikasi email...')" class="hover:text-amber-300 transition flex items-center gap-1.5 truncate max-w-[240px] sm:max-w-none">
-                    <i class="fa-solid fa-envelope text-amber-300"></i> smp.negeri8tenggarong@gmail.com
+                <a href="mailto:smp.negeri8tenggarong@gmail.com" onclick="showToast('Membuka aplikasi email...')" class="text-slate-100 hover:text-amber-300 transition flex items-center gap-1.5 truncate max-w-[240px] sm:max-w-none">
+                    <i class="fa-solid fa-envelope text-amber-400"></i> smp.negeri8tenggarong@gmail.com
                 </a>
-                <a href="tel:082343135943" onclick="showToast('Menghubungi nomor telepon sekolah...')" class="hover:text-amber-300 transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-phone text-amber-300"></i> 0823-4313-5943
+                <a href="tel:082343135943" onclick="showToast('Menghubungi nomor telepon sekolah...')" class="text-slate-100 hover:text-amber-300 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-amber-400"></i> 0823-4313-5943
                 </a>
             </div>
             <div class="flex flex-wrap justify-center items-center gap-2 sm:gap-3">
-                <span class="bg-blue-700 text-white text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full font-medium shadow-sm border border-blue-500/40">NPSN: 30405764</span>
-                <span class="bg-amber-500 text-slate-900 text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full font-bold shadow-sm">Akreditasi B</span>
+                <span class="bg-blue-700 dark:bg-blue-600 text-white text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full font-semibold shadow-sm border border-blue-500">NPSN: 30405764</span>
+                <span class="bg-amber-400 text-slate-950 text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full font-bold shadow-sm">Akreditasi B</span>
                 <div class="flex gap-2.5 ml-1">
-                    <a href="#" class="hover:text-amber-300 transition transform hover:scale-110"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/smpn8tenggarong?exln=bXd0dTQzcDIyYzhx" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition transform hover:scale-110"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="hover:text-amber-300 transition transform hover:scale-110"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-slate-100 hover:text-amber-300 transition transform hover:scale-110"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/smpn8tenggarong?exln=bXd0dTQzcDIyYzhx" target="_blank" rel="noopener noreferrer" class="text-slate-100 hover:text-amber-300 transition transform hover:scale-110"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-slate-100 hover:text-amber-300 transition transform hover:scale-110"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- NAVBAR UTAMA -->
-    <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-md border-b border-blue-100 dark:border-slate-800 transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-white dark:bg-slate-900 shadow-md border-b border-slate-200 dark:border-slate-700 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 sm:h-20">
                 <!-- Logo & Nama Sekolah -->
                 <a href="#beranda" class="flex items-center gap-2.5 sm:gap-3.5 group">
-                    <div class="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center overflow-hidden bg-white p-1 border border-blue-200 dark:border-slate-700 shadow-sm shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center overflow-hidden bg-white p-1 border border-slate-300 dark:border-slate-600 shadow-sm shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <img src="logo smp.jpeg" alt="Logo SMP Negeri 8 Tenggarong" class="w-full h-full object-contain">
                     </div>
                     <div>
-                        <span class="block text-base sm:text-xl font-bold text-slate-900 dark:text-white leading-tight group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">SMP NEGERI 8</span>
-                        <span class="block text-[11px] sm:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Tenggarong, Kukar</span>
+                        <span class="block text-base sm:text-xl font-extrabold text-slate-950 dark:text-white leading-tight group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">SMP NEGERI 8</span>
+                        <span class="block text-[11px] sm:text-sm font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wider">Tenggarong, Kukar</span>
                     </div>
                 </a>
 
                 <!-- Desktop Navigation -->
-                <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm">
-                    <a href="#beranda" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Beranda</a>
-                    <a href="#profil" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Profil</a>
-                    <a href="#visimisi" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Visi & Misi</a>
-                    <a href="#mars" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Mars Sekolah</a>
-                    <a href="#berita" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Berita</a>
-                    <a href="#ekskul" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Ekstrakurikuler</a>
-                    <a href="#galeri" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Galeri</a>
-                    <a href="#ppdb" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">PPDB</a>
-                    <a href="#kontak" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Kontak</a>
+                <nav class="hidden lg:flex items-center space-x-1 font-semibold text-sm">
+                    <a href="#beranda" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Beranda</a>
+                    <a href="#profil" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Profil</a>
+                    <a href="#visimisi" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Visi & Misi</a>
+                    <a href="#mars" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Mars Sekolah</a>
+                    <a href="#berita" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Berita</a>
+                    <a href="#ekskul" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Ekstrakurikuler</a>
+                    <a href="#galeri" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Galeri</a>
+                    <a href="#ppdb" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">PPDB</a>
+                    <a href="#kontak" class="px-3 py-2 rounded-lg text-slate-800 dark:text-slate-100 hover:text-blue-700 dark:hover:text-amber-300 hover:bg-blue-50 dark:hover:bg-slate-800 transition duration-200">Kontak</a>
                 </nav>
 
                 <!-- CTA Button & Theme Toggle Desktop -->
                 <div class="hidden lg:flex items-center gap-3">
-                    <button id="theme-toggle" class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-amber-300 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-slate-700 transition transform hover:rotate-45 duration-300" title="Ganti Tema">
+                    <button id="theme-toggle" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-blue-700 dark:text-amber-300 border border-slate-300 dark:border-slate-600 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-slate-700 transition transform hover:rotate-45 duration-300" title="Ganti Tema">
                         <i id="theme-icon" class="fa-solid fa-moon text-lg"></i>
                     </button>
-                    <a href="#ppdb" onclick="createRipple(event); showToast('Membuka Formulir PPDB')" class="ripple-btn bg-blue-700 hover:bg-blue-800 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-blue-700/25 transition transform hover:-translate-y-0.5">
+                    <a href="#ppdb" onclick="createRipple(event); showToast('Membuka Formulir PPDB')" class="ripple-btn bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold shadow-lg shadow-blue-700/25 transition transform hover:-translate-y-0.5">
                         Daftar PPDB
                     </a>
                 </div>
 
                 <!-- Mobile Menu & Theme Toggle Button -->
                 <div class="flex items-center gap-1.5 lg:hidden">
-                    <button id="theme-toggle-mobile" class="w-9 h-9 rounded-xl bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-amber-300 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-slate-700 transition" title="Ganti Tema">
+                    <button id="theme-toggle-mobile" class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-blue-700 dark:text-amber-300 border border-slate-300 dark:border-slate-600 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-slate-700 transition" title="Ganti Tema">
                         <i id="theme-icon-mobile" class="fa-solid fa-moon text-base"></i>
                     </button>
-                    <button id="menu-btn" class="w-9 h-9 rounded-xl bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-slate-200 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-slate-700 focus:outline-none transition" aria-label="Menu Navigasi">
+                    <button id="menu-btn" class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 dark:border-slate-600 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-slate-700 focus:outline-none transition" aria-label="Menu Navigasi">
                         <i class="fa-solid fa-bars text-lg"></i>
                     </button>
                 </div>
@@ -195,18 +198,18 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-t border-blue-100 dark:border-slate-800 px-4 py-4 space-y-1.5 shadow-2xl transition-all">
-            <a href="#beranda" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Beranda</a>
-            <a href="#profil" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Profil</a>
-            <a href="#visimisi" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Visi & Misi</a>
-            <a href="#mars" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Mars Sekolah</a>
-            <a href="#berita" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Berita</a>
-            <a href="#ekskul" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Ekstrakurikuler</a>
-            <a href="#galeri" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Galeri</a>
-            <a href="#ppdb" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">PPDB</a>
-            <a href="#kontak" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-400 font-medium text-sm transition">Kontak</a>
-            <div class="pt-3 border-t border-slate-100 dark:border-slate-800">
-                <a href="#ppdb" onclick="showToast('Membuka Formulir PPDB')" class="block text-center w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-xl font-semibold text-sm shadow-md transition">Daftar PPDB Sekarang</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 px-4 py-4 space-y-1.5 shadow-2xl transition-all">
+            <a href="#beranda" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Beranda</a>
+            <a href="#profil" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Profil</a>
+            <a href="#visimisi" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Visi & Misi</a>
+            <a href="#mars" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Mars Sekolah</a>
+            <a href="#berita" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Berita</a>
+            <a href="#ekskul" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Ekstrakurikuler</a>
+            <a href="#galeri" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Galeri</a>
+            <a href="#ppdb" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">PPDB</a>
+            <a href="#kontak" class="mobile-link block px-3.5 py-2.5 rounded-xl text-slate-900 dark:text-slate-100 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-amber-300 font-semibold text-sm transition">Kontak</a>
+            <div class="pt-3 border-t border-slate-200 dark:border-slate-700">
+                <a href="#ppdb" onclick="showToast('Membuka Formulir PPDB')" class="block text-center w-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white py-3 rounded-xl font-bold text-sm shadow-md transition">Daftar PPDB Sekarang</a>
             </div>
         </div>
     </header>
@@ -215,27 +218,27 @@
     <section id="beranda" class="hero-gradient text-white py-16 sm:py-20 lg:py-32 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl reveal-up active">
-                <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium mb-5 sm:mb-6 border border-white/25 shadow-lg">
-                    <i class="fa-solid fa-award text-amber-300"></i> Sekolah Standar Nasional & Berkarakter
+                <span class="inline-flex items-center gap-2 bg-slate-900/50 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-5 sm:mb-6 border border-white/30 text-white shadow-lg">
+                    <i class="fa-solid fa-award text-amber-400"></i> Sekolah Standar Nasional & Berkarakter
                 </span>
-                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-4 sm:mb-6">
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-4 sm:mb-6 text-white">
                     Selamat Datang di <span class="text-amber-300 drop-shadow-md">SMP Negeri 8 Tenggarong</span>
                 </h1>
-                <p class="text-sm sm:text-lg lg:text-xl text-blue-50 mb-6 sm:mb-8 leading-relaxed font-light">
+                <p class="text-sm sm:text-lg lg:text-xl text-slate-100 mb-6 sm:mb-8 leading-relaxed font-medium">
                     "Cerdas Dan Berprestasi."
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <a href="#ppdb" onclick="createRipple(event); showToast('Membuka Informasi PPDB')" class="ripple-btn bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
+                    <a href="#ppdb" onclick="createRipple(event); showToast('Membuka Informasi PPDB')" class="ripple-btn bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
                         <i class="fa-solid fa-user-plus"></i> Informasi PPDB
                     </a>
-                    <a href="#profil" onclick="createRipple(event)" class="ripple-btn bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-semibold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
-                        <i class="fa-solid fa-circle-info"></i> Kenali Sekolah Kami
+                    <a href="#profil" onclick="createRipple(event)" class="ripple-btn bg-slate-900/60 hover:bg-slate-900/80 backdrop-blur-md border border-white/40 text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
+                        <i class="fa-solid fa-circle-info text-amber-300"></i> Kenali Sekolah Kami
                     </a>
                 </div>
             </div>
         </div>
         <div class="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-10 sm:h-16 lg:h-20 text-sky-50/40 dark:text-slate-950 preserve-3d">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-10 sm:h-16 lg:h-20 text-slate-100 dark:text-slate-950 preserve-3d">
                 <path d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,58.7C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z" fill="currentColor"></path>
             </svg>
         </div>
@@ -245,81 +248,80 @@
     <section class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 sm:-mt-12 lg:-mt-14 mb-12 sm:mb-16">
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4">
             <!-- NPSN -->
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-blue-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-300 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-id-card"></i>
                 </div>
                 <div>
-                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">NPSN</p>
-                    <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">30405764</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 uppercase tracking-wider font-bold">NPSN</p>
+                    <h3 class="text-xs sm:text-sm font-extrabold text-slate-950 dark:text-white">30405764</h3>
                 </div>
             </div>
 
             <!-- Jumlah Siswa: 273 -->
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-blue-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 80ms;">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-sky-100 dark:bg-sky-950/60 text-sky-700 dark:text-sky-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 80ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-sky-100 dark:bg-sky-900/70 text-sky-800 dark:text-sky-300 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-users"></i>
                 </div>
                 <div>
-                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Jumlah Siswa</p>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white counter" data-target="273">0</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 uppercase tracking-wider font-bold">Jumlah Siswa</p>
+                    <h3 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white counter" data-target="273">0</h3>
                 </div>
             </div>
 
             <!-- Jumlah Kelas: 6 -->
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-blue-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 160ms;">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 160ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-100 dark:bg-amber-900/70 text-amber-700 dark:text-amber-300 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-chalkboard-user"></i>
                 </div>
                 <div>
-                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Jumlah Kelas</p>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white counter" data-target="6">0</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 uppercase tracking-wider font-bold">Jumlah Kelas</p>
+                    <h3 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white counter" data-target="6">0</h3>
                 </div>
             </div>
 
             <!-- Jumlah Rombel: 9 -->
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-blue-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 240ms;">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 240ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 dark:bg-indigo-900/70 text-indigo-800 dark:text-indigo-300 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-layer-group"></i>
                 </div>
                 <div>
-                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Rombel</p>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-800 dark:text-white counter" data-target="9">0</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 uppercase tracking-wider font-bold">Rombel</p>
+                    <h3 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white counter" data-target="9">0</h3>
                 </div>
             </div>
 
             <!-- Akreditasi -->
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-blue-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 320ms;">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 320ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 dark:bg-emerald-900/70 text-emerald-800 dark:text-emerald-300 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div>
-                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Akreditasi</p>
-                    <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white">B (Baik)</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 uppercase tracking-wider font-bold">Akreditasi</p>
+                    <h3 class="text-xs sm:text-sm font-extrabold text-slate-950 dark:text-white">B (Baik)</h3>
                 </div>
             </div>
 
             <!-- Lokasi -->
-            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-blue-100 dark:border-slate-800 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 400ms;">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-100 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-400 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+            <div class="reveal-up bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg sm:shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" style="transition-delay: 400ms;">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-100 dark:bg-cyan-900/70 text-cyan-800 dark:text-cyan-300 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div>
-                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Lokasi</p>
-                    <h3 class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white truncate" title="Maluhu, Tenggarong">Maluhu</h3>
+                    <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 uppercase tracking-wider font-bold">Lokasi</p>
+                    <h3 class="text-xs sm:text-sm font-extrabold text-slate-950 dark:text-white truncate" title="Maluhu, Tenggarong">Maluhu</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SAMBUTAN KEPALA SEKOLAH (BACKGROUND ANGKA DIHAPUS) -->
-    <section id="profil" class="py-12 sm:py-16 bg-sky-50/40 dark:bg-slate-950">
+    <!-- SAMBUTAN KEPALA SEKOLAH -->
+    <section id="profil" class="py-12 sm:py-16 bg-slate-100 dark:bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="reveal-up bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden border border-blue-100 dark:border-slate-800">
+            <div class="reveal-up bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden border border-slate-200 dark:border-slate-700">
                 <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
-                    <!-- Kolom Foto Kepala Sekolah Bersih Tanpa Background Angka -->
-                    <div class="lg:col-span-5 relative bg-gradient-to-br from-blue-700 via-blue-800 to-sky-900 dark:from-blue-900 dark:to-slate-950 p-6 sm:p-8 lg:p-12 text-white flex flex-col items-center justify-center text-center overflow-hidden">
-                        <!-- Dekorasi halus non-angka -->
+                    <!-- Kolom Foto Kepala Sekolah -->
+                    <div class="lg:col-span-5 relative bg-gradient-to-br from-blue-800 via-blue-900 to-slate-900 dark:from-blue-950 dark:to-slate-950 p-6 sm:p-8 lg:p-12 text-white flex flex-col items-center justify-center text-center overflow-hidden border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-800">
                         <div class="absolute -top-16 -left-16 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
                         <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-sky-400/15 rounded-full blur-2xl pointer-events-none"></div>
                         
@@ -327,31 +329,31 @@
                             <div class="w-36 h-36 sm:w-44 sm:h-44 lg:w-48 lg:h-48 mx-auto rounded-full border-4 border-amber-400 shadow-2xl overflow-hidden mb-4 sm:mb-6 bg-white transform hover:scale-105 transition duration-500">
                                 <img src="syaifullah.jpeg" alt="Syaifullah, S.Pd. - Kepala SMP Negeri 8 Tenggarong" class="w-full h-full object-cover">
                             </div>
-                            <h3 class="text-lg sm:text-2xl font-bold tracking-tight">Syaifullah, S.Pd.</h3>
-                            <p class="text-amber-300 font-medium text-xs sm:text-sm mt-1">Kepala SMP Negeri 8 Tenggarong</p>
+                            <h3 class="text-lg sm:text-2xl font-extrabold tracking-tight text-white">Syaifullah, S.Pd.</h3>
+                            <p class="text-amber-300 font-semibold text-xs sm:text-sm mt-1">Kepala SMP Negeri 8 Tenggarong</p>
                         </div>
                     </div>
 
                     <div class="lg:col-span-7 p-6 sm:p-10 lg:p-16 flex flex-col justify-center">
-                        <div class="inline-block w-fit bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider mb-3 sm:mb-4">
+                        <div class="inline-block w-fit bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-200 border border-blue-200 dark:border-blue-700 text-xs font-extrabold px-3.5 py-1 rounded-full uppercase tracking-wider mb-3 sm:mb-4">
                             Sambutan Pimpinan
                         </div>
-                        <h2 class="text-xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6">
+                        <h2 class="text-xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mb-4 sm:mb-6">
                             Membangun Karakter Unggul Melalui Pendidikan Berkualitas
                         </h2>
-                        <div class="space-y-3 sm:space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                        <div class="space-y-3 sm:space-y-4 text-slate-700 dark:text-slate-200 leading-relaxed text-sm sm:text-base">
                             <p>
                                 Assalamu’alaikum Warahmatullahi Wabarakatuh, Puji syukur senantiasa kita panjatkan ke hadirat Allah SWT karena atas limpahan rahmat dan karunia-Nya website resmi SMP Negeri 8 Tenggarong ini dapat hadir kembali untuk memenuhi kebutuhan informasi masyarakat luas.
                             </p>
                             <p>
-                                Dengan jumlah peserta didik sebanyak <strong class="text-blue-700 dark:text-blue-400">273 siswa</strong> yang tersebar di <strong class="text-blue-700 dark:text-blue-400">9 rombongan belajar</strong> dalam <strong class="text-blue-700 dark:text-blue-400">6 kelas</strong>, kami berkomitmen untuk terus meningkatkan mutu dan layanan pendidikan terbaik di Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.
+                                Dengan jumlah peserta didik sebanyak <strong class="text-blue-700 dark:text-amber-300 font-bold">273 siswa</strong> yang tersebar di <strong class="text-blue-700 dark:text-amber-300 font-bold">9 rombongan belajar</strong> dalam <strong class="text-blue-700 dark:text-amber-300 font-bold">6 kelas</strong>, kami berkomitmen untuk terus meningkatkan mutu dan layanan pendidikan terbaik di Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.
                             </p>
-                            <p class="font-medium text-slate-800 dark:text-slate-200">
+                            <p class="font-semibold text-slate-900 dark:text-white">
                                 Mari bersama-sama kita wujudkan generasi muda yang cerdas, tangguh, berakhlak mulia, dan siap bersaing di masa depan.
                             </p>
                         </div>
                         <div class="mt-6 sm:mt-8 flex items-center gap-4">
-                            <div class="italic font-serif text-blue-700/80 dark:text-blue-400/80 text-xs sm:text-sm font-medium">"Wujudkan Sekolah Ramah Anak & Berprestasi"</div>
+                            <div class="italic font-serif text-blue-800 dark:text-amber-300 text-xs sm:text-sm font-semibold">"Wujudkan Sekolah Ramah Anak & Berprestasi"</div>
                         </div>
                     </div>
                 </div>
@@ -360,82 +362,82 @@
     </section>
 
     <!-- VISI, MISI, DAN TUJUAN -->
-    <section id="visimisi" class="py-12 sm:py-16 bg-white dark:bg-slate-900">
+    <section id="visimisi" class="py-12 sm:py-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal-up text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-                <span class="text-blue-700 dark:text-blue-400 font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/60 px-3.5 py-1 rounded-full">Landasan Sekolah</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Visi, Misi & Tujuan</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">Komitmen kami dalam membimbing dan mendidik peserta didik.</p>
+                <span class="text-blue-800 dark:text-blue-200 font-extrabold text-xs sm:text-sm tracking-wider uppercase bg-blue-100 dark:bg-blue-900/70 border border-blue-200 dark:border-blue-700 px-3.5 py-1 rounded-full">Landasan Sekolah</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mt-3">Visi, Misi & Tujuan</h2>
+                <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base mt-2">Komitmen kami dalam membimbing dan mendidik peserta didik.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Visi Card -->
-                <div class="reveal-up bg-gradient-to-br from-blue-600 to-blue-800 text-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl shadow-blue-700/20 flex flex-col justify-between transform hover:-translate-y-2 transition duration-300">
+                <div class="reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg flex flex-col justify-between transform hover:-translate-y-2 transition duration-300">
                     <div>
-                        <div class="w-12 h-12 bg-white/15 rounded-xl sm:rounded-2xl flex items-center justify-center text-amber-300 text-xl mb-5 sm:mb-6">
+                        <div class="w-12 h-12 bg-blue-700 dark:bg-blue-600 text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-xl mb-5 sm:mb-6 shadow-md">
                             <i class="fa-solid fa-eye"></i>
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Visi Sekolah</h3>
-                        <p class="text-blue-50 text-base sm:text-lg leading-relaxed italic">
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-950 dark:text-white mb-3 sm:mb-4">Visi Sekolah</h3>
+                        <p class="text-slate-700 dark:text-slate-200 text-sm sm:text-base leading-relaxed italic font-medium">
                             "Terwujudnya peserta didik yang cerdas, berakhlak mulia, berkarakter profil pelajar Pancasila, serta peduli terhadap lingkungan."
                         </p>
                     </div>
-                    <div class="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-blue-500/40 text-xs text-blue-100">
-                        <i class="fa-solid fa-check-circle mr-1 text-amber-300"></i> Menjadi acuan utama mutu pendidikan di Maluhu.
+                    <div class="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300">
+                        <i class="fa-solid fa-check-circle mr-1 text-blue-700 dark:text-amber-400"></i> Menjadi acuan utama mutu pendidikan di Maluhu.
                     </div>
                 </div>
 
                 <!-- Misi Card -->
-                <div class="reveal-up bg-sky-50/50 dark:bg-slate-950 border border-blue-100 dark:border-slate-800 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg flex flex-col justify-between transform hover:-translate-y-2 transition duration-300" style="transition-delay: 150ms;">
+                <div class="reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg flex flex-col justify-between transform hover:-translate-y-2 transition duration-300" style="transition-delay: 150ms;">
                     <div>
-                        <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl mb-5 sm:mb-6">
+                        <div class="w-12 h-12 bg-blue-700 dark:bg-blue-600 text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-xl mb-5 sm:mb-6 shadow-md">
                             <i class="fa-solid fa-bullseye"></i>
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-3 sm:mb-4">Misi Sekolah</h3>
-                        <ul class="space-y-3 text-slate-600 dark:text-slate-300 text-sm">
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-950 dark:text-white mb-3 sm:mb-4">Misi Sekolah</h3>
+                        <ul class="space-y-3 text-slate-700 dark:text-slate-200 text-sm">
                             <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-blue-600 dark:text-blue-400 mt-1 shrink-0"></i>
+                                <i class="fa-solid fa-check text-blue-700 dark:text-amber-400 mt-1 shrink-0"></i>
                                 <span>Melaksanakan pembelajaran aktif, kreatif, efektif, dan menyenangkan.</span>
                             </li>
                             <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-blue-600 dark:text-blue-400 mt-1 shrink-0"></i>
+                                <i class="fa-solid fa-check text-blue-700 dark:text-amber-400 mt-1 shrink-0"></i>
                                 <span>Menanamkan nilai-nilai keimanan dan ketakwaan melalui kegiatan keagamaan rutin.</span>
                             </li>
                             <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-blue-600 dark:text-blue-400 mt-1 shrink-0"></i>
+                                <i class="fa-solid fa-check text-blue-700 dark:text-amber-400 mt-1 shrink-0"></i>
                                 <span>Mengembangkan potensi siswa melalui kegiatan ekstrakurikuler yang terarah.</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-blue-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
-                        <i class="fa-solid fa-layer-group mr-1 text-blue-600 dark:text-blue-400"></i> Terintegrasi dalam kurikulum merdeka.
+                    <div class="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300">
+                        <i class="fa-solid fa-layer-group mr-1 text-blue-700 dark:text-amber-400"></i> Terintegrasi dalam kurikulum merdeka.
                     </div>
                 </div>
 
                 <!-- Tujuan Card -->
-                <div class="reveal-up bg-sky-50/50 dark:bg-slate-950 border border-blue-100 dark:border-slate-800 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg flex flex-col justify-between transform hover:-translate-y-2 transition duration-300" style="transition-delay: 300ms;">
+                <div class="reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg flex flex-col justify-between transform hover:-translate-y-2 transition duration-300" style="transition-delay: 300ms;">
                     <div>
-                        <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl mb-5 sm:mb-6">
+                        <div class="w-12 h-12 bg-blue-700 dark:bg-blue-600 text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-xl mb-5 sm:mb-6 shadow-md">
                             <i class="fa-solid fa-flag-checkered"></i>
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-3 sm:mb-4">Tujuan Sekolah</h3>
-                        <ul class="space-y-3 text-slate-600 dark:text-slate-300 text-sm">
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-950 dark:text-white mb-3 sm:mb-4">Tujuan Sekolah</h3>
+                        <ul class="space-y-3 text-slate-700 dark:text-slate-200 text-sm">
                             <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-amber-500 dark:text-amber-400 mt-1 shrink-0"></i>
+                                <i class="fa-solid fa-check text-blue-700 dark:text-amber-400 mt-1 shrink-0"></i>
                                 <span>Meraih prestasi akademik dan non-akademik tingkat Kabupaten hingga Provinsi.</span>
                             </li>
                             <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-amber-500 dark:text-amber-400 mt-1 shrink-0"></i>
+                                <i class="fa-solid fa-check text-blue-700 dark:text-amber-400 mt-1 shrink-0"></i>
                                 <span>Membentuk lulusan yang disiplin, jujur, dan memiliki kecakapan sosial tinggi.</span>
                             </li>
                             <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-amber-500 dark:text-amber-400 mt-1 shrink-0"></i>
+                                <i class="fa-solid fa-check text-blue-700 dark:text-amber-400 mt-1 shrink-0"></i>
                                 <span>Menciptakan lingkungan sekolah yang bersih, hijau, dan kondusif untuk belajar.</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-blue-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
-                        <i class="fa-solid fa-award mr-1 text-amber-500 dark:text-amber-400"></i> Berorientasi pada mutu lulusan terbaik.
+                    <div class="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300">
+                        <i class="fa-solid fa-award mr-1 text-blue-700 dark:text-amber-400"></i> Berorientasi pada mutu lulusan terbaik.
                     </div>
                 </div>
             </div>
@@ -443,23 +445,23 @@
     </section>
 
     <!-- VIDEO MARS SMPN 8 TENGGARONG -->
-    <section id="mars" class="py-12 sm:py-16 bg-sky-50/40 dark:bg-slate-950 border-t border-blue-100 dark:border-slate-800">
+    <section id="mars" class="py-12 sm:py-16 bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal-up text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-                <span class="text-blue-700 dark:text-blue-400 font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-100/70 dark:bg-blue-950/60 px-3.5 py-1 rounded-full">Mars Sekolah</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Mars SMP Negeri 8 Tenggarong</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">Dengarkan dan saksikan video mars resmi SMP Negeri 8 Tenggarong.</p>
+                <span class="text-blue-800 dark:text-blue-200 font-extrabold text-xs sm:text-sm tracking-wider uppercase bg-blue-100 dark:bg-blue-900/70 border border-blue-200 dark:border-blue-700 px-3.5 py-1 rounded-full">Mars Sekolah</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mt-3">Mars SMP Negeri 8 Tenggarong</h2>
+                <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base mt-2">Dengarkan dan saksikan video mars resmi SMP Negeri 8 Tenggarong.</p>
             </div>
 
-            <div class="reveal-zoom max-w-4xl mx-auto bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-2xl sm:rounded-3xl shadow-xl border border-blue-100 dark:border-slate-800">
-                <div class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg bg-slate-950 aspect-video">
+            <div class="reveal-zoom max-w-4xl mx-auto bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-2xl sm:rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700">
+                <div class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg bg-slate-950 aspect-video border border-slate-300 dark:border-slate-700">
                     <video controls playsinline class="w-full h-full object-contain">
                         <source src="video_1.mp4" type="video/mp4">
                         Browser Anda tidak mendukung pemutaran video.
                     </video>
                 </div>
                 <div class="mt-5 sm:mt-6 text-center">
-                    <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm italic">
+                    <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm italic font-medium">
                         "Mars SMP Negeri 8 Tenggarong - Semangat kebanggaan dan motivasi bagi seluruh siswa dan guru."
                     </p>
                 </div>
@@ -467,126 +469,126 @@
         </div>
     </section>
 
-    <!-- BERITA & PENGUMUMAN TERBARU (DENGAN FILTER KATEGORI INTERAKTIF) -->
-    <section id="berita" class="py-12 sm:py-16 bg-white dark:bg-slate-900">
+    <!-- BERITA & PENGUMUMAN TERBARU -->
+    <section id="berita" class="py-12 sm:py-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal-up flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-12 gap-4">
                 <div>
-                    <span class="text-blue-700 dark:text-blue-400 font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/60 px-3.5 py-1 rounded-full">Informasi Terkini</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Berita & Pengumuman Sekolah</h2>
+                    <span class="text-blue-800 dark:text-blue-200 font-extrabold text-xs sm:text-sm tracking-wider uppercase bg-blue-100 dark:bg-blue-900/70 border border-blue-200 dark:border-blue-700 px-3.5 py-1 rounded-full">Informasi Terkini</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mt-3">Berita & Pengumuman Sekolah</h2>
                 </div>
                 <!-- Filter Tombol Berita -->
                 <div class="flex flex-wrap gap-2" id="news-filter">
-                    <button onclick="filterNews('all')" class="news-filter-btn active-filter bg-blue-700 text-white text-xs font-semibold px-3.5 py-1.5 rounded-xl transition shadow">Semua</button>
-                    <button onclick="filterNews('akademik')" class="news-filter-btn bg-blue-50/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Akademik</button>
-                    <button onclick="filterNews('olahraga')" class="news-filter-btn bg-blue-50/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Olahraga</button>
-                    <button onclick="filterNews('seni')" class="news-filter-btn bg-blue-50/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Seni & Kreativitas</button>
-                    <button onclick="filterNews('kelulusan')" class="news-filter-btn bg-blue-50/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Kelulusan</button>
+                    <button onclick="filterNews('all')" class="news-filter-btn active-filter bg-blue-700 dark:bg-blue-600 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl transition shadow">Semua</button>
+                    <button onclick="filterNews('akademik')" class="news-filter-btn bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 text-xs font-bold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Akademik</button>
+                    <button onclick="filterNews('olahraga')" class="news-filter-btn bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 text-xs font-bold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Olahraga</button>
+                    <button onclick="filterNews('seni')" class="news-filter-btn bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 text-xs font-bold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Seni & Kreativitas</button>
+                    <button onclick="filterNews('kelulusan')" class="news-filter-btn bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 text-xs font-bold px-3.5 py-1.5 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Kelulusan</button>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="news-container">
                 <!-- Artikel 1: Akademik -->
-                <div class="news-card reveal-up bg-sky-50/40 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-blue-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="akademik">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(1)">
+                <div class="news-card reveal-up bg-slate-50 dark:bg-slate-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="akademik">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-950 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(1)">
                         <img src="juara1lombacerdascermatVIMAHAKAM.jpeg" alt="Juara 1 Cerdas Cermat Gema VI Mahakam" class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Prestasi Akademik</span>
+                        <span class="absolute top-4 left-4 bg-amber-400 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full shadow-md z-10">Prestasi Akademik</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i> 13 Mei 2026
+                            <div class="text-[11px] sm:text-xs font-semibold text-slate-600 dark:text-slate-300 mb-2 flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-blue-700 dark:text-amber-400"></i> 13 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(1)">Nur Shifa, Zahra Adelia & Nafisya Putri Raih Juara 1 Cerdas Cermat Gema VI Mahakam</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Tim cerdas cermat SMPN 8 Tenggarong berhasil menorehkan prestasi gemilang dan keluar sebagai Juara 1 dalam ajang kompetisi Gema VI Mahakam 2026.</p>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition cursor-pointer" onclick="openArticle(1)">Nur Shifa, Zahra Adelia & Nafisya Putri Raih Juara 1 Cerdas Cermat Gema VI Mahakam</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm line-clamp-3">Tim cerdas cermat SMPN 8 Tenggarong berhasil menorehkan prestasi gemilang dan keluar sebagai Juara 1 dalam ajang kompetisi Gema VI Mahakam 2026.</p>
                         </div>
-                        <div class="mt-5 sm:mt-6 pt-4 border-t border-blue-100 dark:border-slate-800 flex items-center justify-between text-xs">
-                            <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Tim Prestasi</span>
-                            <button onclick="openArticle(1)" class="text-blue-700 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
+                        <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between text-xs">
+                            <span class="font-semibold text-slate-600 dark:text-slate-300">Oleh Tim Prestasi</span>
+                            <button onclick="openArticle(1)" class="text-blue-700 dark:text-amber-300 font-extrabold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 2: Olahraga -->
-                <div class="news-card reveal-up bg-sky-50/40 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-blue-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="olahraga" style="transition-delay: 100ms;">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(2)">
+                <div class="news-card reveal-up bg-slate-50 dark:bg-slate-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="olahraga" style="transition-delay: 100ms;">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-950 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(2)">
                         <img src="juara2lombaatletikputri02sn.jpeg" alt="Amabel Syaima Juara 2 Atletik Putri O2SN" class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Prestasi Olahraga</span>
+                        <span class="absolute top-4 left-4 bg-blue-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md z-10">Prestasi Olahraga</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i> 10 Mei 2026
+                            <div class="text-[11px] sm:text-xs font-semibold text-slate-600 dark:text-slate-300 mb-2 flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-blue-700 dark:text-amber-400"></i> 10 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(2)">Amabel Syaima Sukses Raih Juara 2 Atletik Putri O2SN Tingkat Kabupaten Kukar</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Prestasi membanggakan ditorehkan oleh Amabel Syaima yang berhasil meraih Juara 2 Atletik Putri pada ajang O2SN tingkat SMP Kabupaten Kutai Kartanegara tahun 2026.</p>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition cursor-pointer" onclick="openArticle(2)">Amabel Syaima Sukses Raih Juara 2 Atletik Putri O2SN Tingkat Kabupaten Kukar</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm line-clamp-3">Prestasi membanggakan ditorehkan oleh Amabel Syaima yang berhasil meraih Juara 2 Atletik Putri pada ajang O2SN tingkat SMP Kabupaten Kutai Kartanegara tahun 2026.</p>
                         </div>
-                        <div class="mt-5 sm:mt-6 pt-4 border-t border-blue-100 dark:border-slate-800 flex items-center justify-between text-xs">
-                            <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Tim Olahraga</span>
-                            <button onclick="openArticle(2)" class="text-blue-700 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
+                        <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between text-xs">
+                            <span class="font-semibold text-slate-600 dark:text-slate-300">Oleh Tim Olahraga</span>
+                            <button onclick="openArticle(2)" class="text-blue-700 dark:text-amber-300 font-extrabold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 3: Seni -->
-                <div class="news-card reveal-up bg-sky-50/40 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-blue-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="seni" style="transition-delay: 200ms;">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(3)">
+                <div class="news-card reveal-up bg-slate-50 dark:bg-slate-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="seni" style="transition-delay: 200ms;">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-950 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(3)">
                         <img src="juara2lombailustrasifls3n.jpeg" alt="Juara Harapan 2 Ilustrasi FLS3N" class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Seni & Kreativitas</span>
+                        <span class="absolute top-4 left-4 bg-sky-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md z-10">Seni & Kreativitas</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i> 06 Mei 2026
+                            <div class="text-[11px] sm:text-xs font-semibold text-slate-600 dark:text-slate-300 mb-2 flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-blue-700 dark:text-amber-400"></i> 06 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(3)">Cut Maharani Putri Sukses Meraih Juara Harapan 2 Ilustrasi FLS2N Kukar</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Karya seni ilustrasi terbaik mengantarkan Cut Maharani Putri meraih Juara Harapan 2 pada ajang FLS2N Tingkat Kabupaten Kutai Kartanegara.</p>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition cursor-pointer" onclick="openArticle(3)">Cut Maharani Putri Sukses Meraih Juara Harapan 2 Ilustrasi FLS2N Kukar</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm line-clamp-3">Karya seni ilustrasi terbaik mengantarkan Cut Maharani Putri meraih Juara Harapan 2 pada ajang FLS2N Tingkat Kabupaten Kutai Kartanegara.</p>
                         </div>
-                        <div class="mt-5 sm:mt-6 pt-4 border-t border-blue-100 dark:border-slate-800 flex items-center justify-between text-xs">
-                            <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Bidang Seni</span>
-                            <button onclick="openArticle(3)" class="text-blue-700 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
+                        <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between text-xs">
+                            <span class="font-semibold text-slate-600 dark:text-slate-300">Oleh Bidang Seni</span>
+                            <button onclick="openArticle(3)" class="text-blue-700 dark:text-amber-300 font-extrabold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 4: Seni -->
-                <div class="news-card reveal-up bg-sky-50/40 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-blue-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="seni">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(4)">
+                <div class="news-card reveal-up bg-slate-50 dark:bg-slate-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="seni">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-950 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(4)">
                         <img src="rafaelradityajuara2mendongengfls3n.jpeg" alt="Juara 2 Mendongeng FLS3N" class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Seni & Sastra</span>
+                        <span class="absolute top-4 left-4 bg-indigo-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md z-10">Seni & Sastra</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i> 06 Mei 2026
+                            <div class="text-[11px] sm:text-xs font-semibold text-slate-600 dark:text-slate-300 mb-2 flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-blue-700 dark:text-amber-400"></i> 06 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(4)">Rafael Raditya Tampilkan Performa Memukau & Raih Juara 2 Mendongeng FLS2N Kukar</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Dengan penjiwaan dan ekspresi luar biasa, Rafael Raditya sukses menyabet Juara 2 Lomba Mendongeng FLS2N tingkat Kabupaten Kutai Kartanegara.</p>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition cursor-pointer" onclick="openArticle(4)">Rafael Raditya Tampilkan Performa Memukau & Raih Juara 2 Mendongeng FLS2N Kukar</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm line-clamp-3">Dengan penjiwaan dan ekspresi luar biasa, Rafael Raditya sukses menyabet Juara 2 Lomba Mendongeng FLS2N tingkat Kabupaten Kutai Kartanegara.</p>
                         </div>
-                        <div class="mt-5 sm:mt-6 pt-4 border-t border-blue-100 dark:border-slate-800 flex items-center justify-between text-xs">
-                            <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Bidang Sastra</span>
-                            <button onclick="openArticle(4)" class="text-blue-700 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
+                        <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between text-xs">
+                            <span class="font-semibold text-slate-600 dark:text-slate-300">Oleh Bidang Sastra</span>
+                            <button onclick="openArticle(4)" class="text-blue-700 dark:text-amber-300 font-extrabold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Artikel 5: Kelulusan -->
-                <div class="news-card reveal-up bg-sky-50/40 dark:bg-slate-950 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-blue-100 dark:border-slate-800 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="kelulusan" style="transition-delay: 100ms;">
-                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(5)">
+                <div class="news-card reveal-up bg-slate-50 dark:bg-slate-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col h-full group hover:-translate-y-2 transition duration-300" data-category="kelulusan" style="transition-delay: 100ms;">
+                    <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-200 dark:bg-slate-950 flex items-center justify-center p-2 cursor-pointer" onclick="openArticle(5)">
                         <img src="zahraadeliaputrilulusdisma10samarinda.jpeg" alt="Zahra Adelia Putri Diterima di SMAN 10 Samarinda" class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">Kelulusan</span>
+                        <span class="absolute top-4 left-4 bg-emerald-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md z-10">Kelulusan</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <div class="text-[11px] sm:text-xs text-slate-400 dark:text-slate-500 mb-2 flex items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i> 04 Mei 2026
+                            <div class="text-[11px] sm:text-xs font-semibold text-slate-600 dark:text-slate-300 mb-2 flex items-center gap-2">
+                                <i class="fa-regular fa-calendar text-blue-700 dark:text-amber-400"></i> 04 Mei 2026
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition cursor-pointer" onclick="openArticle(5)">Selamat & Sukses Zahra Adelia Putri Atas Diterimanya di SMAN 10 Samarinda</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3">Kabar membanggakan dari alumni SMPN 8 Tenggarong tahun ajaran 2025/2026 yang berhasil diterima di sekolah unggulan SMA Negeri 10 Samarinda.</p>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white mb-2.5 sm:mb-3 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition cursor-pointer" onclick="openArticle(5)">Selamat & Sukses Zahra Adelia Putri Atas Diterimanya di SMAN 10 Samarinda</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm line-clamp-3">Kabar membanggakan dari alumni SMPN 8 Tenggarong tahun ajaran 2025/2026 yang berhasil diterima di sekolah unggulan SMA Negeri 10 Samarinda.</p>
                         </div>
-                        <div class="mt-5 sm:mt-6 pt-4 border-t border-blue-100 dark:border-slate-800 flex items-center justify-between text-xs">
-                            <span class="font-medium text-slate-500 dark:text-slate-400">Oleh Humas Sekolah</span>
-                            <button onclick="openArticle(5)" class="text-blue-700 dark:text-blue-400 font-bold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
+                        <div class="mt-5 sm:mt-6 pt-4 border-t border-slate-200 dark:border-slate-700 flex items-center justify-between text-xs">
+                            <span class="font-semibold text-slate-600 dark:text-slate-300">Oleh Humas Sekolah</span>
+                            <button onclick="openArticle(5)" class="text-blue-700 dark:text-amber-300 font-extrabold hover:underline focus:outline-none">Baca Selengkapnya &rarr;</button>
                         </div>
                     </div>
                 </div>
@@ -595,198 +597,198 @@
     </section>
 
     <!-- EKSTRAKURIKULER -->
-    <section id="ekskul" class="py-12 sm:py-16 bg-sky-50/40 dark:bg-slate-950">
+    <section id="ekskul" class="py-12 sm:py-16 bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal-up text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-                <span class="text-blue-700 dark:text-blue-400 font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-100/70 dark:bg-blue-950/60 px-3.5 py-1 rounded-full">Pengembangan Bakat</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Ekstrakurikuler Pilihan</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">Wadah penyaluran bakat, minat, dan pembentukan karakter peserta didik di luar jam pelajaran.</p>
+                <span class="text-blue-800 dark:text-blue-200 font-extrabold text-xs sm:text-sm tracking-wider uppercase bg-blue-100 dark:bg-blue-900/70 border border-blue-200 dark:border-blue-700 px-3.5 py-1 rounded-full">Pengembangan Bakat</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mt-3">Ekstrakurikuler Pilihan</h2>
+                <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base mt-2">Wadah penyaluran bakat, minat, dan pembentukan karakter peserta didik di luar jam pelajaran.</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
                 <!-- Ekskul 1 -->
-                <div class="reveal-up bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-blue-100 dark:bg-blue-900/50 group-hover:bg-white/20 text-blue-700 dark:text-blue-400 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
+                <div class="reveal-up bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-blue-100 dark:bg-blue-900/80 group-hover:bg-white/20 text-blue-800 dark:text-blue-200 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
                         <i class="fa-solid fa-compass"></i>
                     </div>
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-white text-sm sm:text-base">Pramuka</h3>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 group-hover:text-blue-100 mt-0.5 sm:mt-1">Wajib & Unggulan</p>
+                    <h3 class="font-extrabold text-slate-950 dark:text-white group-hover:text-white text-sm sm:text-base">Pramuka</h3>
+                    <p class="text-[11px] sm:text-xs font-medium text-slate-600 dark:text-slate-300 group-hover:text-blue-100 mt-0.5 sm:mt-1">Wajib & Unggulan</p>
                 </div>
                 
                 <!-- Ekskul 2 -->
-                <div class="reveal-up bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 100ms;">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-white border border-blue-200 dark:border-slate-700 rounded-xl sm:rounded-2xl flex items-center justify-center overflow-hidden p-1.5 mb-3 sm:mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <div class="reveal-up bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-white border border-slate-300 dark:border-slate-600 rounded-xl sm:rounded-2xl flex items-center justify-center overflow-hidden p-1.5 mb-3 sm:mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
                         <img src="logo paskib.jpeg" alt="Logo Paskibra SMPN 8 Tenggarong" class="w-full h-full object-contain">
                     </div>
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-white text-sm sm:text-base">Paskibra</h3>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 group-hover:text-blue-100 mt-0.5 sm:mt-1">Baris Berbaris</p>
+                    <h3 class="font-extrabold text-slate-950 dark:text-white group-hover:text-white text-sm sm:text-base">Paskibra</h3>
+                    <p class="text-[11px] sm:text-xs font-medium text-slate-600 dark:text-slate-300 group-hover:text-blue-100 mt-0.5 sm:mt-1">Baris Berbaris</p>
                 </div>
 
                 <!-- Ekskul 3 -->
-                <div class="reveal-up bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 200ms;">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-sky-100 dark:bg-sky-900/50 group-hover:bg-white/20 text-sky-700 dark:text-sky-400 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
+                <div class="reveal-up bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-sky-100 dark:bg-sky-900/80 group-hover:bg-white/20 text-sky-800 dark:text-sky-200 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
                         <i class="fa-solid fa-futbol"></i>
                     </div>
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-white text-sm sm:text-base">Futsal</h3>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 group-hover:text-blue-100 mt-0.5 sm:mt-1">Olahraga Prestasi</p>
+                    <h3 class="font-extrabold text-slate-950 dark:text-white group-hover:text-white text-sm sm:text-base">Futsal</h3>
+                    <p class="text-[11px] sm:text-xs font-medium text-slate-600 dark:text-slate-300 group-hover:text-blue-100 mt-0.5 sm:mt-1">Olahraga Prestasi</p>
                 </div>
 
                 <!-- Ekskul 4 -->
-                <div class="reveal-up bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 300ms;">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-amber-100 dark:bg-amber-900/50 group-hover:bg-white/20 text-amber-600 dark:text-amber-400 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
+                <div class="reveal-up bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 300ms;">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-amber-100 dark:bg-amber-900/80 group-hover:bg-white/20 text-amber-800 dark:text-amber-200 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
                         <i class="fa-solid fa-masks-theater"></i>
                     </div>
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-white text-sm sm:text-base">Seni Tari</h3>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 group-hover:text-blue-100 mt-0.5 sm:mt-1">Seni & Budaya</p>
+                    <h3 class="font-extrabold text-slate-950 dark:text-white group-hover:text-white text-sm sm:text-base">Seni Tari</h3>
+                    <p class="text-[11px] sm:text-xs font-medium text-slate-600 dark:text-slate-300 group-hover:text-blue-100 mt-0.5 sm:mt-1">Seni & Budaya</p>
                 </div>
 
                 <!-- Ekskul 5 -->
-                <div class="reveal-up bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 400ms;">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-rose-100 dark:bg-rose-900/50 group-hover:bg-white/20 text-rose-600 dark:text-rose-400 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
+                <div class="reveal-up bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 400ms;">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-rose-100 dark:bg-rose-900/80 group-hover:bg-white/20 text-rose-800 dark:text-rose-200 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
                         <i class="fa-solid fa-kit-medical"></i>
                     </div>
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-white text-sm sm:text-base">PMR</h3>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 group-hover:text-blue-100 mt-0.5 sm:mt-1">Kesehatan Remaja</p>
+                    <h3 class="font-extrabold text-slate-950 dark:text-white group-hover:text-white text-sm sm:text-base">PMR</h3>
+                    <p class="text-[11px] sm:text-xs font-medium text-slate-600 dark:text-slate-300 group-hover:text-blue-100 mt-0.5 sm:mt-1">Kesehatan Remaja</p>
                 </div>
 
                 <!-- Ekskul 6 -->
-                <div class="reveal-up bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 500ms;">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-indigo-100 dark:bg-indigo-900/50 group-hover:bg-white/20 text-indigo-600 dark:text-indigo-400 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
+                <div class="reveal-up bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 sm:p-6 rounded-2xl sm:rounded-3xl text-center hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white transition transform hover:-translate-y-2 hover:shadow-xl group flex flex-col items-center justify-center shadow-sm" style="transition-delay: 500ms;">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-indigo-100 dark:bg-indigo-900/80 group-hover:bg-white/20 text-indigo-800 dark:text-indigo-200 group-hover:text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-4 transition transform group-hover:rotate-6">
                         <i class="fa-solid fa-book-quran"></i>
                     </div>
-                    <h3 class="font-bold text-slate-800 dark:text-white group-hover:text-white text-sm sm:text-base">Rohis</h3>
-                    <p class="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 group-hover:text-blue-100 mt-0.5 sm:mt-1">Kerohanian Islam</p>
+                    <h3 class="font-extrabold text-slate-950 dark:text-white group-hover:text-white text-sm sm:text-base">Rohis</h3>
+                    <p class="text-[11px] sm:text-xs font-medium text-slate-600 dark:text-slate-300 group-hover:text-blue-100 mt-0.5 sm:mt-1">Kerohanian Islam</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALERI KEGIATAN (DENGAN FILTER KATEGORI INTERAKTIF) -->
-    <section id="galeri" class="py-12 sm:py-16 bg-white dark:bg-slate-900">
+    <!-- GALERI KEGIATAN -->
+    <section id="galeri" class="py-12 sm:py-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal-up text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                <span class="text-blue-700 dark:text-blue-400 font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/60 px-3.5 py-1 rounded-full">Dokumentasi</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Galeri Foto Kegiatan</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">Momen kebersamaan, kegiatan belajar mengajar, serta ekstrakurikuler siswa.</p>
+                <span class="text-blue-800 dark:text-blue-200 font-extrabold text-xs sm:text-sm tracking-wider uppercase bg-blue-100 dark:bg-blue-900/70 border border-blue-200 dark:border-blue-700 px-3.5 py-1 rounded-full">Dokumentasi</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mt-3">Galeri Foto Kegiatan</h2>
+                <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base mt-2">Momen kebersamaan, kegiatan belajar mengajar, serta ekstrakurikuler siswa.</p>
             </div>
 
             <!-- Filter Tombol Galeri -->
             <div class="reveal-up flex flex-wrap justify-center gap-2 mb-10" id="gallery-filter">
-                <button onclick="filterGallery('all')" class="gallery-filter-btn active-filter bg-blue-700 text-white text-xs font-semibold px-4 py-2 rounded-xl transition shadow">Semua Foto</button>
-                <button onclick="filterGallery('kegiatan')" class="gallery-filter-btn bg-blue-50/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-4 py-2 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Ekstrakurikuler & Olahraga</button>
-                <button onclick="filterGallery('nasional')" class="gallery-filter-btn bg-blue-50/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-4 py-2 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Nasional & Upacara</button>
-                <button onclick="filterGallery('budaya')" class="gallery-filter-btn bg-blue-50/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-4 py-2 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Budaya & Keagamaan</button>
+                <button onclick="filterGallery('all')" class="gallery-filter-btn active-filter bg-blue-700 dark:bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition shadow">Semua Foto</button>
+                <button onclick="filterGallery('kegiatan')" class="gallery-filter-btn bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 text-xs font-bold px-4 py-2 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Ekstrakurikuler & Olahraga</button>
+                <button onclick="filterGallery('nasional')" class="gallery-filter-btn bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 text-xs font-bold px-4 py-2 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Nasional & Upacara</button>
+                <button onclick="filterGallery('budaya')" class="gallery-filter-btn bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 text-xs font-bold px-4 py-2 rounded-xl hover:bg-blue-100 dark:hover:bg-slate-700 transition">Budaya & Keagamaan</button>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="gallery-container">
                 <!-- Card 1 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="kegiatan">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="kegiatan">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="fotobersamaekskulbola.jpeg" alt="Tim Ekstrakurikuler Sepak Bola" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Ekstrakurikuler</span>
+                        <span class="absolute top-4 left-4 bg-blue-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Ekstrakurikuler</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Tim Ekstrakurikuler Sepak Bola</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Kegiatan latihan rutin sepak bola untuk mengasah teknik, stamina, dan sportivitas siswa di lapangan hijau.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Tim Ekstrakurikuler Sepak Bola</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Kegiatan latihan rutin sepak bola untuk mengasah teknik, stamina, dan sportivitas siswa di lapangan hijau.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="nasional" style="transition-delay: 100ms;">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="nasional" style="transition-delay: 100ms;">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="pengibaranbendera.jpeg" alt="Proses Pengibaran Bendera Merah Putih" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Upacara</span>
+                        <span class="absolute top-4 left-4 bg-sky-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Upacara</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Proses Pengibaran Bendera Merah Putih</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Upacara bendera dalam rangka memperingati HUT Republik Indonesia yang dilaksanakan dengan khidmat.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Proses Pengibaran Bendera Merah Putih</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Upacara bendera dalam rangka memperingati HUT Republik Indonesia yang dilaksanakan dengan khidmat.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="nasional" style="transition-delay: 200ms;">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="nasional" style="transition-delay: 200ms;">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="kegiatanpawai17agustus.jpeg" alt="Kegiatan Pawai Kemerdekaan 17 Agustus" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-md">Nasional</span>
+                        <span class="absolute top-4 left-4 bg-amber-400 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Nasional</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Pawai Kemerdekaan 17 Agustus</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Partisipasi meriah guru dan siswa dalam pawai memperingati Hari Kemerdekaan Republik Indonesia.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Pawai Kemerdekaan 17 Agustus</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Partisipasi meriah guru dan siswa dalam pawai memperingati Hari Kemerdekaan Republik Indonesia.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="kegiatan" style="transition-delay: 300ms;">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="kegiatan" style="transition-delay: 300ms;">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="kegiatanadiwiyata.jpeg" alt="Kegiatan Adiwiyata Sekolah" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Adiwiyata</span>
+                        <span class="absolute top-4 left-4 bg-emerald-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Adiwiyata</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Kegiatan Adiwiyata & Gotong Royong</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Aksi nyata warga sekolah dalam merawat taman dan menjaga kebersihan lingkungan sekolah secara berkelanjutan.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Kegiatan Adiwiyata & Gotong Royong</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Aksi nyata warga sekolah dalam merawat taman dan menjaga kebersihan lingkungan sekolah secara berkelanjutan.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="budaya">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="budaya">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="kegiatanbeseprahdalammemperingatierau.jpeg" alt="Kegiatan Beseprah Memperingati Erau" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Budaya</span>
+                        <span class="absolute top-4 left-4 bg-indigo-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Budaya</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Beseprah Memperingati Erau</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Pelestarian tradisi budaya Kutai makan bersama (Beseprah) dalam rangka menyemarakkan Festival Erau.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Beseprah Memperingati Erau</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Pelestarian tradisi budaya Kutai makan bersama (Beseprah) dalam rangka menyemarakkan Festival Erau.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="budaya" style="transition-delay: 100ms;">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="budaya" style="transition-delay: 100ms;">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="kegiatansholatdhuhadandoabersama.jpeg" alt="Sholat Dhuha dan Doa Bersama" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Keagamaan</span>
+                        <span class="absolute top-4 left-4 bg-blue-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Keagamaan</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Sholat Dhuha & Doa Bersama</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Pembiasaan ibadah rutin pagi hari untuk memperkuat keimanan, ketakwaan, dan akhlak mulia siswa.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Sholat Dhuha & Doa Bersama</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Pembiasaan ibadah rutin pagi hari untuk memperkuat keimanan, ketakwaan, dan akhlak mulia siswa.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 7 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="kegiatan" style="transition-delay: 200ms;">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="kegiatan" style="transition-delay: 200ms;">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="kegiatansosialisasidaurulangsampah.jpeg" alt="Sosialisasi Daur Ulang Sampah" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Lingkungan</span>
+                        <span class="absolute top-4 left-4 bg-teal-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Lingkungan</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Sosialisasi Daur Ulang Sampah</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Edukasi kreatif pengolahan sampah plastik menjadi barang bernilai guna untuk mengurangi limbah sekolah.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Sosialisasi Daur Ulang Sampah</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Edukasi kreatif pengolahan sampah plastik menjadi barang bernilai guna untuk mengurangi limbah sekolah.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 8 -->
-                <div class="gallery-item reveal-up bg-sky-50/40 dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="nasional" style="transition-delay: 300ms;">
-                    <div class="relative overflow-hidden h-48 sm:h-52">
+                <div class="gallery-item reveal-up bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-lg flex flex-col group hover:-translate-y-2 transition duration-300" data-category="nasional" style="transition-delay: 300ms;">
+                    <div class="relative overflow-hidden h-48 sm:h-52 bg-slate-200 dark:bg-slate-950">
                         <img src="pawaiulangtahunkelurahanmaluhu.jpeg" alt="Pawai Ulang Tahun Kelurahan Maluhu" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-cyan-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Komunitas</span>
+                        <span class="absolute top-4 left-4 bg-cyan-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md">Komunitas</span>
                     </div>
                     <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition">Pawai HUT Kelurahan Maluhu</h4>
-                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Keterlibatan aktif dewan guru dan staf dalam memeriahkan perayaan hari jadi Kelurahan Maluhu.</p>
+                            <h4 class="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-amber-300 transition">Pawai HUT Kelurahan Maluhu</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">Keterlibatan aktif dewan guru dan staf dalam memeriahkan perayaan hari jadi Kelurahan Maluhu.</p>
                         </div>
                     </div>
                 </div>
@@ -795,50 +797,50 @@
     </section>
 
     <!-- INFORMASI PPDB -->
-    <section id="ppdb" class="py-12 sm:py-16 bg-sky-50/40 dark:bg-slate-950">
+    <section id="ppdb" class="py-12 sm:py-16 bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="reveal-zoom bg-gradient-to-br from-blue-700 via-blue-800 to-sky-900 rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-16 text-white shadow-2xl shadow-blue-800/20 relative overflow-hidden">
+            <div class="reveal-zoom bg-gradient-to-br from-blue-800 via-blue-900 to-slate-900 rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-16 text-white shadow-2xl border border-blue-700/50 relative overflow-hidden">
                 <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
                 <div class="relative z-10 max-w-3xl">
-                    <span class="bg-amber-400 text-slate-900 font-bold text-[11px] sm:text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider inline-block mb-3 sm:mb-4 shadow">
+                    <span class="bg-amber-400 text-slate-950 font-extrabold text-[11px] sm:text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider inline-block mb-3 sm:mb-4 shadow">
                         Penerimaan Peserta Didik Baru
                     </span>
-                    <h2 class="text-2xl sm:text-4xl font-extrabold mb-3 sm:mb-4">Bergabung Bersama SMP Negeri 8 Tenggarong</h2>
-                    <p class="text-blue-100 text-sm sm:text-lg mb-6 sm:mb-8 leading-relaxed">
+                    <h2 class="text-2xl sm:text-4xl font-extrabold mb-3 sm:mb-4 text-white">Bergabung Bersama SMP Negeri 8 Tenggarong</h2>
+                    <p class="text-slate-100 text-sm sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                         Pendaftaran Tahun Ajaran Baru kini dibuka! Daftarkan putra-putri Anda melalui jalur Zonasi, Afirmasi, Perpindahan Tugas Orang Tua, maupun Prestasi.
                     </p>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
-                        <div class="bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/20 shadow-lg">
-                            <h3 class="font-bold text-base sm:text-lg mb-2.5 sm:mb-3 flex items-center gap-2 text-amber-300">
+                        <div class="bg-slate-950/50 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/25 shadow-lg">
+                            <h3 class="font-extrabold text-base sm:text-lg mb-2.5 sm:mb-3 flex items-center gap-2 text-amber-300">
                                 <i class="fa-solid fa-list-check"></i> Syarat Pendaftaran
                             </h3>
-                            <ul class="space-y-2 text-xs sm:text-sm text-blue-50">
-                                <li><i class="fa-solid fa-check mr-2 text-amber-300"></i> Ijazah / SKL SD/MI Sederajat</li>
-                                <li><i class="fa-solid fa-check mr-2 text-amber-300"></i> Akta Kelahiran & Kartu Keluarga (KK)</li>
-                                <li><i class="fa-solid fa-check mr-2 text-amber-300"></i> KIP / PKH (Bagi jalur afirmasi)</li>
-                                <li><i class="fa-solid fa-check mr-2 text-amber-300"></i> Pas foto berwarna ukuran 3x4 (2 lembar)</li>
+                            <ul class="space-y-2 text-xs sm:text-sm text-slate-100">
+                                <li><i class="fa-solid fa-check mr-2 text-amber-400"></i> Ijazah / SKL SD/MI Sederajat</li>
+                                <li><i class="fa-solid fa-check mr-2 text-amber-400"></i> Akta Kelahiran & Kartu Keluarga (KK)</li>
+                                <li><i class="fa-solid fa-check mr-2 text-amber-400"></i> KIP / PKH (Bagi jalur afirmasi)</li>
+                                <li><i class="fa-solid fa-check mr-2 text-amber-400"></i> Pas foto berwarna ukuran 3x4 (2 lembar)</li>
                             </ul>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/20 shadow-lg">
-                            <h3 class="font-bold text-base sm:text-lg mb-2.5 sm:mb-3 flex items-center gap-2 text-amber-300">
+                        <div class="bg-slate-950/50 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/25 shadow-lg">
+                            <h3 class="font-extrabold text-base sm:text-lg mb-2.5 sm:mb-3 flex items-center gap-2 text-amber-300">
                                 <i class="fa-solid fa-calendar-days"></i> Alur Pendaftaran
                             </h3>
-                            <ul class="space-y-2 text-xs sm:text-sm text-blue-50">
-                                <li><span class="font-bold text-amber-300">1.</span> Mengisi formulir online/offline di sekolah.</li>
-                                <li><span class="font-bold text-amber-300">2.</span> Menyerahkan berkas verifikasi ke panitia.</li>
-                                <li><span class="font-bold text-amber-300">3.</span> Pengumuman hasil seleksi sesuai jadwal.</li>
-                                <li><span class="font-bold text-amber-300">4.</span> Daftar ulang bagi siswa yang diterima.</li>
+                            <ul class="space-y-2 text-xs sm:text-sm text-slate-100">
+                                <li><span class="font-extrabold text-amber-400">1.</span> Mengisi formulir online/offline di sekolah.</li>
+                                <li><span class="font-extrabold text-amber-400">2.</span> Menyerahkan berkas verifikasi ke panitia.</li>
+                                <li><span class="font-extrabold text-amber-400">3.</span> Pengumuman hasil seleksi sesuai jadwal.</li>
+                                <li><span class="font-extrabold text-amber-400">4.</span> Daftar ulang bagi siswa yang diterima.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                        <button onclick="createRipple(event); openModal()" class="ripple-btn bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
+                        <button onclick="createRipple(event); openModal()" class="ripple-btn bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
                             <i class="fa-solid fa-file-pen"></i> Form Pendaftaran Online
                         </button>
-                        <a href="#kontak" onclick="createRipple(event)" class="ripple-btn bg-white/15 hover:bg-white/25 border border-white/30 text-white font-semibold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
-                            <i class="fa-solid fa-headset"></i> Hubungi Panitia PPDB
+                        <a href="#kontak" onclick="createRipple(event)" class="ripple-btn bg-slate-950/60 hover:bg-slate-950/80 border border-white/40 text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-headset text-amber-300"></i> Hubungi Panitia PPDB
                         </a>
                     </div>
                 </div>
@@ -847,74 +849,74 @@
     </section>
 
     <!-- KONTAK DAN LOKASI -->
-    <section id="kontak" class="py-12 sm:py-16 bg-white dark:bg-slate-900 border-t border-blue-100 dark:border-slate-800">
+    <section id="kontak" class="py-12 sm:py-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal-up text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-                <span class="text-blue-700 dark:text-blue-400 font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 dark:bg-blue-950/60 px-3.5 py-1 rounded-full">Hubungi Kami</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3">Lokasi & Kontak Sekolah</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">Kunjungi atau hubungi kami untuk informasi lebih lanjut mengenai layanan sekolah.</p>
+                <span class="text-blue-800 dark:text-blue-200 font-extrabold text-xs sm:text-sm tracking-wider uppercase bg-blue-100 dark:bg-blue-900/70 border border-blue-200 dark:border-blue-700 px-3.5 py-1 rounded-full">Hubungi Kami</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mt-3">Lokasi & Kontak Sekolah</h2>
+                <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base mt-2">Kunjungi atau hubungi kami untuk informasi lebih lanjut mengenai layanan sekolah.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
                 <div class="reveal-up space-y-3.5 sm:space-y-4">
                     <!-- Alamat -->
-                    <div class="bg-sky-50/40 dark:bg-slate-950 p-4 sm:p-5 rounded-2xl shadow-sm border border-blue-100 dark:border-slate-800 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
-                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
+                    <div class="bg-slate-50 dark:bg-slate-800 p-4 sm:p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
+                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-blue-100 dark:bg-blue-900/80 text-blue-800 dark:text-blue-200 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base mb-1">Alamat Sekolah</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            <h3 class="font-extrabold text-slate-950 dark:text-white text-sm sm:text-base mb-1">Alamat Sekolah</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm leading-relaxed">
                                 Jl. Arjuna Rt. 13, Kelurahan Maluhu, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara, Kalimantan Timur 75517.
                             </p>
                         </div>
                     </div>
 
                     <!-- Email -->
-                    <div class="bg-sky-50/40 dark:bg-slate-950 p-4 sm:p-5 rounded-2xl shadow-sm border border-blue-100 dark:border-slate-800 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
-                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
+                    <div class="bg-slate-50 dark:bg-slate-800 p-4 sm:p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
+                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-amber-100 dark:bg-amber-900/80 text-amber-800 dark:text-amber-200 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base mb-1">Email Resmi</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm">
-                                <a href="mailto:smp.negeri8tenggarong@gmail.com" onclick="showToast('Membuka aplikasi email...')" class="text-blue-700 dark:text-blue-400 hover:underline font-medium break-all">smp.negeri8tenggarong@gmail.com</a>
+                            <h3 class="font-extrabold text-slate-950 dark:text-white text-sm sm:text-base mb-1">Email Resmi</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm">
+                                <a href="mailto:smp.negeri8tenggarong@gmail.com" onclick="showToast('Membuka aplikasi email...')" class="text-blue-700 dark:text-amber-300 hover:underline font-bold break-all">smp.negeri8tenggarong@gmail.com</a>
                             </p>
                         </div>
                     </div>
 
                     <!-- Telepon -->
-                    <div class="bg-sky-50/40 dark:bg-slate-950 p-4 sm:p-5 rounded-2xl shadow-sm border border-blue-100 dark:border-slate-800 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
-                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-sky-100 dark:bg-sky-900/50 text-sky-700 dark:text-sky-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
+                    <div class="bg-slate-50 dark:bg-slate-800 p-4 sm:p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
+                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-sky-100 dark:bg-sky-900/80 text-sky-800 dark:text-sky-200 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base mb-1">Telepon</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm">
-                                <a href="tel:082343135943" onclick="showToast('Menghubungi nomor telepon...')" class="text-blue-700 dark:text-blue-400 hover:underline font-medium">0823-4313-5943</a>
+                            <h3 class="font-extrabold text-slate-950 dark:text-white text-sm sm:text-base mb-1">Telepon</h3>
+                            <p class="text-slate-700 dark:text-slate-200 text-xs sm:text-sm">
+                                <a href="tel:082343135943" onclick="showToast('Menghubungi nomor telepon...')" class="text-blue-700 dark:text-amber-300 hover:underline font-bold">0823-4313-5943</a>
                             </p>
                         </div>
                     </div>
 
                     <!-- Jam Operasional -->
-                    <div class="bg-sky-50/40 dark:bg-slate-950 p-4 sm:p-5 rounded-2xl shadow-sm border border-blue-100 dark:border-slate-800 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
-                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
+                    <div class="bg-slate-50 dark:bg-slate-800 p-4 sm:p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-start gap-3.5 sm:gap-4 hover:shadow-md transition">
+                        <div class="w-11 h-11 sm:w-12 sm:h-12 bg-indigo-100 dark:bg-indigo-900/80 text-indigo-800 dark:text-indigo-200 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl shrink-0 mt-0.5">
                             <i class="fa-solid fa-clock"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base mb-1">Jam Operasional Sekolah</h3>
-                            <div class="space-y-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                            <h3 class="font-extrabold text-slate-950 dark:text-white text-sm sm:text-base mb-1">Jam Operasional Sekolah</h3>
+                            <div class="space-y-1 text-xs sm:text-sm text-slate-700 dark:text-slate-200">
                                 <div class="flex justify-between gap-4">
-                                    <span class="font-medium text-slate-700 dark:text-slate-200">Senin - Kamis:</span>
+                                    <span class="font-bold text-slate-900 dark:text-white">Senin - Kamis:</span>
                                     <span>07.15 - 14.00 WITA</span>
                                 </div>
                                 <div class="flex justify-between gap-4">
-                                    <span class="font-medium text-slate-700 dark:text-slate-200">Jumat - Sabtu:</span>
+                                    <span class="font-bold text-slate-900 dark:text-white">Jumat - Sabtu:</span>
                                     <span>07.15 - 11.30 WITA</span>
                                 </div>
-                                <div class="flex justify-between gap-4 text-[11px] text-slate-500 dark:text-slate-400 pt-1 border-t border-blue-100 dark:border-slate-800">
+                                <div class="flex justify-between gap-4 text-[11px] font-medium text-slate-600 dark:text-slate-300 pt-1 border-t border-slate-200 dark:border-slate-700">
                                     <span>Minggu / Hari Libur Nasional:</span>
-                                    <span>Tutup</span>
+                                    <span class="font-bold text-rose-700 dark:text-rose-400">Tutup</span>
                                 </div>
                             </div>
                         </div>
@@ -922,7 +924,7 @@
                 </div>
 
                 <!-- GOOGLE MAPS EMBED -->
-                <div class="reveal-zoom bg-sky-50/40 dark:bg-slate-950 p-3 rounded-2xl sm:rounded-3xl shadow-xl border border-blue-100 dark:border-slate-800 h-[380px] sm:h-[480px] relative overflow-hidden flex flex-col">
+                <div class="reveal-zoom bg-slate-50 dark:bg-slate-800 p-3 rounded-2xl sm:rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 h-[380px] sm:h-[480px] relative overflow-hidden flex flex-col">
                     <iframe 
                         src="https://maps.google.com/maps?q=-0.4079033,116.94742&t=&z=17&ie=UTF8&iwloc=&output=embed" 
                         class="w-full h-full rounded-xl sm:rounded-2xl border-0" 
@@ -931,17 +933,17 @@
                         referrerpolicy="no-referrer-when-downgrade"
                         title="Peta Lokasi SMP Negeri 8 Tenggarong">
                     </iframe>
-                    <div class="absolute bottom-5 left-5 right-5 z-10 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-lg flex items-center justify-between border border-blue-100 dark:border-slate-800">
+                    <div class="absolute bottom-5 left-5 right-5 z-10 bg-white dark:bg-slate-900 p-3 sm:p-4 rounded-2xl shadow-lg flex items-center justify-between border border-slate-300 dark:border-slate-600">
                         <div class="flex items-center gap-3">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 bg-blue-700 text-white rounded-xl flex items-center justify-center text-base sm:text-lg shadow">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 bg-blue-700 dark:bg-blue-600 text-white rounded-xl flex items-center justify-center text-base sm:text-lg shadow">
                                 <i class="fa-solid fa-map-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-xs sm:text-sm text-slate-900 dark:text-white">SMP Negeri 8 Tenggarong</h4>
-                                <p class="text-[11px] text-slate-600 dark:text-slate-300">Jl. Arjuna, Kel. Maluhu</p>
+                                <h4 class="font-extrabold text-xs sm:text-sm text-slate-950 dark:text-white">SMP Negeri 8 Tenggarong</h4>
+                                <p class="text-[11px] font-medium text-slate-600 dark:text-slate-300">Jl. Arjuna, Kel. Maluhu</p>
                             </div>
                         </div>
-                        <a href="https://www.google.com/maps/search/?api=1&query=-0.4079033,116.94742" target="_blank" rel="noopener noreferrer" class="bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold px-3 py-2 rounded-xl transition shadow shrink-0">
+                        <a href="https://www.google.com/maps/search/?api=1&query=-0.4079033,116.94742" target="_blank" rel="noopener noreferrer" class="bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white text-xs font-bold px-3 py-2 rounded-xl transition shadow shrink-0">
                             Buka Maps <i class="fa-solid fa-external-link ml-1"></i>
                         </a>
                     </div>
@@ -951,16 +953,16 @@
     </section>
 
     <!-- MODAL HALAMAN DETAIL ARTIKEL BERITA -->
-    <div id="article-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md hidden p-4 overflow-y-auto opacity-0">
-        <div class="modal-content bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl relative border border-blue-100 dark:border-slate-800 my-8 max-h-[90vh] overflow-y-auto">
-            <button onclick="closeArticle()" class="absolute top-5 right-5 z-20 w-10 h-10 rounded-full bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-slate-200 flex items-center justify-center hover:bg-blue-100 dark:hover:bg-slate-700 transition text-lg font-bold">
+    <div id="article-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md hidden p-4 overflow-y-auto opacity-0">
+        <div class="modal-content bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl relative border border-slate-300 dark:border-slate-700 my-8 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeArticle()" class="absolute top-5 right-5 z-20 w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-300 dark:border-slate-600 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition text-lg font-bold">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <div id="article-content-container">
                 <!-- Konten dinamis akan dimuat di sini melalui JavaScript -->
             </div>
-            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 flex justify-end">
-                <button onclick="closeArticle()" class="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
+            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700 flex justify-end">
+                <button onclick="closeArticle()" class="bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
                     Tutup & Kembali ke Berita
                 </button>
             </div>
@@ -968,23 +970,23 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="bg-blue-950 text-blue-200 py-10 sm:py-12 border-t border-blue-900">
+    <footer class="bg-blue-950 dark:bg-slate-950 text-slate-200 py-10 sm:py-12 border-t border-blue-900 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3.5 mb-4">
-                        <div class="w-12 h-12 rounded-2xl flex items-center justify-center overflow-hidden bg-white p-1.5 border border-blue-800 shrink-0">
+                        <div class="w-12 h-12 rounded-2xl flex items-center justify-center overflow-hidden bg-white p-1.5 border border-slate-300 shrink-0">
                             <img src="logo smp.jpeg" alt="Logo SMP Negeri 8 Tenggarong" class="w-full h-full object-contain">
                         </div>
-                        <span class="text-lg sm:text-xl font-bold text-white">SMP Negeri 8 Tenggarong</span>
+                        <span class="text-lg sm:text-xl font-extrabold text-white">SMP Negeri 8 Tenggarong</span>
                     </div>
-                    <p class="text-xs sm:text-sm text-blue-200/80 leading-relaxed max-w-md">
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md">
                         Sekolah Menengah Pertama Negeri yang berkomitmen mencetak lulusan berkualitas, berakhlak mulia, berkarakter luhur, dan siap menghadapi tantangan global di Kutai Kartanegara.
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-white font-bold text-sm sm:text-base mb-3 sm:mb-4">Tautan Cepat</h4>
-                    <ul class="space-y-2 text-xs sm:text-sm">
+                    <h4 class="text-white font-extrabold text-sm sm:text-base mb-3 sm:mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-200">
                         <li><a href="#beranda" class="hover:text-amber-300 transition">Beranda</a></li>
                         <li><a href="#profil" class="hover:text-amber-300 transition">Profil Kepala Sekolah</a></li>
                         <li><a href="#visimisi" class="hover:text-amber-300 transition">Visi & Misi</a></li>
@@ -994,39 +996,39 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-bold text-sm sm:text-base mb-3 sm:mb-4">Layanan & PPDB</h4>
-                    <ul class="space-y-2 text-xs sm:text-sm">
+                    <h4 class="text-white font-extrabold text-sm sm:text-base mb-3 sm:mb-4">Layanan & PPDB</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-200">
                         <li><a href="#ppdb" class="hover:text-amber-300 transition">Informasi PPDB</a></li>
                         <li><a href="#galeri" class="hover:text-amber-300 transition">Galeri Sekolah</a></li>
                         <li><a href="#kontak" class="hover:text-amber-300 transition">Hubungi Kami</a></li>
-                        <li><span class="text-amber-300 font-medium">NPSN: 30405764</span></li>
+                        <li><span class="text-amber-300 font-bold">NPSN: 30405764</span></li>
                     </ul>
                 </div>
             </div>
-            <div class="pt-6 sm:pt-8 border-t border-blue-900 flex flex-col sm:flex-row justify-between items-center text-xs gap-3 text-center sm:text-left">
-                <p>&copy; 2026 SMP Negeri 8 Tenggarong. Hak Cipta Dilindungi Undang-Undang.</p>
+            <div class="pt-6 sm:pt-8 border-t border-blue-900 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs gap-3 text-center sm:text-left">
+                <p class="text-slate-300">&copy; 2026 SMP Negeri 8 Tenggarong. Hak Cipta Dilindungi Undang-Undang.</p>
                 <div class="flex items-center gap-4">
-                    <span class="text-blue-300/70">Kabupaten Kutai Kartanegara, Kalimantan Timur</span>
+                    <span class="text-slate-300">Kabupaten Kutai Kartanegara, Kalimantan Timur</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- MODAL CUSTOM PPDB -->
-    <div id="ppdb-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden p-4 opacity-0">
-        <div class="modal-content bg-white dark:bg-slate-900 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-blue-100 dark:border-slate-800">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 text-xl font-bold">
+    <div id="ppdb-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center bg-slate-950/75 backdrop-blur-sm hidden p-4 opacity-0">
+        <div class="modal-content bg-white dark:bg-slate-900 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-slate-300 dark:border-slate-700">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-600 hover:text-slate-950 dark:text-slate-300 dark:hover:text-white text-xl font-bold">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <div class="text-center">
-                <div class="w-16 h-16 bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner">
+                <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/80 text-blue-800 dark:text-blue-200 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner">
                     <i class="fa-solid fa-user-check"></i>
                 </div>
-                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">Pendaftaran PPDB Online</h3>
-                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                <h3 class="text-xl sm:text-2xl font-extrabold text-slate-950 dark:text-white mb-2">Pendaftaran PPDB Online</h3>
+                <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
                     Formulir pendaftaran online gelombang baru akan segera dibuka. Silakan hubungi panitia sekolah atau kunjungi langsung sekretariat PPDB di SMP Negeri 8 Tenggarong, Maluhu.
                 </p>
-                <button onclick="closeModal()" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3.5 rounded-xl shadow-lg transition text-sm">
+                <button onclick="closeModal()" class="w-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition text-sm">
                     Mengerti & Tutup
                 </button>
             </div>
@@ -1036,7 +1038,7 @@
     <!-- FLOATING BACK TO TOP BUTTON & TOAST CONTAINER -->
     <div id="toast-container" class="fixed bottom-6 left-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
-    <button id="back-to-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-amber-400 hover:bg-amber-500 text-slate-900 rounded-full shadow-2xl flex items-center justify-center text-lg transition-all duration-300 opacity-0 translate-y-10 pointer-events-none hover:scale-110 animate-bounce" title="Kembali ke atas">
+    <button id="back-to-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-amber-400 hover:bg-amber-300 text-slate-950 border border-amber-500 rounded-full shadow-2xl flex items-center justify-center text-lg transition-all duration-300 opacity-0 translate-y-10 pointer-events-none hover:scale-110 animate-bounce" title="Kembali ke atas">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
@@ -1103,11 +1105,11 @@
         function filterNews(category) {
             const buttons = document.querySelectorAll('.news-filter-btn');
             buttons.forEach(btn => {
-                btn.classList.remove('bg-blue-700', 'text-white', 'shadow');
-                btn.classList.add('bg-blue-50/70', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+                btn.classList.remove('bg-blue-700', 'dark:bg-blue-600', 'text-white', 'shadow');
+                btn.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-800', 'dark:text-slate-100', 'border', 'border-slate-300', 'dark:border-slate-600');
             });
-            event.target.classList.remove('bg-blue-50/70', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
-            event.target.classList.add('bg-blue-700', 'text-white', 'shadow');
+            event.target.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-800', 'dark:text-slate-100', 'border', 'border-slate-300', 'dark:border-slate-600');
+            event.target.classList.add('bg-blue-700', 'dark:bg-blue-600', 'text-white', 'shadow');
 
             const cards = document.querySelectorAll('.news-card');
             cards.forEach(card => {
@@ -1132,11 +1134,11 @@
         function filterGallery(category) {
             const buttons = document.querySelectorAll('.gallery-filter-btn');
             buttons.forEach(btn => {
-                btn.classList.remove('bg-blue-700', 'text-white', 'shadow');
-                btn.classList.add('bg-blue-50/70', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+                btn.classList.remove('bg-blue-700', 'dark:bg-blue-600', 'text-white', 'shadow');
+                btn.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-800', 'dark:text-slate-100', 'border', 'border-slate-300', 'dark:border-slate-600');
             });
-            event.target.classList.remove('bg-blue-50/70', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
-            event.target.classList.add('bg-blue-700', 'text-white', 'shadow');
+            event.target.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-800', 'dark:text-slate-100', 'border', 'border-slate-300', 'dark:border-slate-600');
+            event.target.classList.add('bg-blue-700', 'dark:bg-blue-600', 'text-white', 'shadow');
 
             const items = document.querySelectorAll('.gallery-item');
             items.forEach(item => {
@@ -1167,16 +1169,16 @@
 
             const container = document.getElementById('article-content-container');
             container.innerHTML = `
-                <span class="${article.categoryBg} text-white text-xs font-bold px-3 py-1 rounded-full shadow-md inline-block mb-4">${article.category}</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-3 leading-tight">${article.title}</h2>
-                <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-6 flex items-center gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
-                    <span><i class="fa-regular fa-calendar mr-1.5"></i> ${article.date}</span>
-                    <span><i class="fa-regular fa-user mr-1.5"></i> ${article.author}</span>
+                <span class="${article.categoryBg} ${article.categoryText || 'text-white'} text-xs font-extrabold px-3 py-1 rounded-full shadow-md inline-block mb-4">${article.category}</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white mb-3 leading-tight">${article.title}</h2>
+                <div class="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 mb-6 flex items-center gap-4 border-b border-slate-200 dark:border-slate-700 pb-4">
+                    <span><i class="fa-regular fa-calendar mr-1.5 text-blue-700 dark:text-amber-400"></i> ${article.date}</span>
+                    <span><i class="fa-regular fa-user mr-1.5 text-blue-700 dark:text-amber-400"></i> ${article.author}</span>
                 </div>
-                <div class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg mb-6 bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-2">
+                <div class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg mb-6 bg-slate-200 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 flex items-center justify-center p-2">
                     <img src="${article.image}" alt="${article.title}" class="w-full h-full object-contain rounded-xl">
                 </div>
-                <div class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-4">
+                <div class="text-slate-800 dark:text-slate-100 text-sm sm:text-base leading-relaxed space-y-4">
                     ${article.content}
                 </div>
             `;
@@ -1257,7 +1259,7 @@
         function showToast(message) {
             const container = document.getElementById('toast-container');
             const toast = document.createElement('div');
-            toast.className = 'bg-blue-950/95 dark:bg-slate-800/95 text-white text-xs sm:text-sm px-4 py-3 rounded-2xl shadow-xl backdrop-blur-md border border-blue-700/50 flex items-center gap-3 transform translate-y-6 opacity-0 transition-all duration-300 pointer-events-auto';
+            toast.className = 'bg-slate-900 dark:bg-slate-800 text-white text-xs sm:text-sm px-4 py-3 rounded-2xl shadow-xl border border-slate-700 dark:border-slate-600 flex items-center gap-3 transform translate-y-6 opacity-0 transition-all duration-300 pointer-events-auto font-medium';
             toast.innerHTML = `<i class="fa-solid fa-circle-check text-amber-400 text-base"></i> <span>${message}</span>`;
             
             container.appendChild(toast);
@@ -1279,15 +1281,16 @@
                 title: "Nur Shifa, Zahra Adelia & Nafisya Putri Raih Juara 1 Cerdas Cermat Gema VI Mahakam",
                 date: "13 Mei 2026",
                 category: "Prestasi Akademik",
-                categoryBg: "bg-amber-600",
+                categoryBg: "bg-amber-400",
+                categoryText: "text-slate-950",
                 author: "Tim Prestasi & Humas Sekolah",
                 image: "juara1lombacerdascermatVIMAHAKAM.jpeg",
                 content: `
                     <p class="mb-4">Tenggarong — Prestasi membanggakan kembali ditorehkan oleh peserta didik SMP Negeri 8 Tenggarong. Tim cerdas cermat yang beranggotakan Nur Shifa, Zahra Adelia, dan Nafisya Putri sukses keluar sebagai <strong>Juara 1</strong> dalam ajang bergengsi kompetisi Gema VI Mahakam tahun 2026.</p>
                     <p class="mb-4">Kompetisi yang diikuti oleh puluhan sekolah tingkat menengah pertama dari berbagai wilayah ini menguji ketangkasan berpikir, wawasan luas, serta kecepatan dalam menjawab soal-soal di bidang Matematika, IPA, IPS, dan Pengetahuan Umum.</p>
-                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Persiapan Intensif dan Kerja Sama Tim</h4>
+                    <h4 class="font-extrabold text-base sm:text-lg text-slate-950 dark:text-white mt-6 mb-2">Persiapan Intensif dan Kerja Sama Tim</h4>
                     <p class="mb-4">Keberhasilan ini tidak diperoleh dengan mudah. Di bawah bimbingan guru pembimbing sekolah, ketiga siswi ini menjalani latihan intensif selama berpekan-pekan sepulang sekolah. Koordinasi yang solid dan ketenangan mental saat menghadapi babak final menjadi kunci utama kemenangan mereka.</p>
-                    <blockquote class="border-l-4 border-blue-600 pl-4 italic my-6 text-slate-600 dark:text-slate-300">
+                    <blockquote class="border-l-4 border-blue-700 dark:border-amber-400 pl-4 italic my-6 text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 py-3 pr-3 rounded-r-xl">
                         "Kami sangat bersyukur dan bangga atas kerja keras anak-anak kami. Ini membuktikan bahwa siswa-siswi SMPN 8 Tenggarong mampu bersaing dan unggul di tingkat regional," ujar Kepala Sekolah Syaifullah, S.Pd.
                     </blockquote>
                     <p>Semoga prestasi gemilang ini dapat menjadi inspirasi dan motivasi bagi seluruh siswa SMP Negeri 8 Tenggarong untuk terus giat belajar dan berprestasi di berbagai bidang.</p>
@@ -1297,13 +1300,13 @@
                 title: "Amabel Syaima Sukses Raih Juara 2 Atletik Putri O2SN Tingkat Kabupaten Kukar",
                 date: "10 Mei 2026",
                 category: "Prestasi Olahraga",
-                categoryBg: "bg-blue-600",
+                categoryBg: "bg-blue-700",
                 author: "Tim Olahraga & Kesiswaan",
                 image: "juara2lombaatletikputri02sn.jpeg",
                 content: `
                     <p class="mb-4">Tenggarong — Semangat juang tinggi ditunjukkan oleh Amabel Syaima, siswi utusan SMP Negeri 8 Tenggarong, yang berhasil menyabet gelar <strong>Juara 2 Atletik Putri</strong> pada ajang Olimpiade Olahraga Siswa Nasional (O2SN) tingkat Kabupaten Kutai Kartanegara tahun 2026.</p>
                     <p class="mb-4">Bertanding di stadion utama Kabupaten Kukar, Amabel menunjukkan ketahanan fisik, kecepatan lari, serta teknik yang matang dalam menghadapi atlet-atlet terbaik dari berbagai kecamatan.</p>
-                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Buah Dari Latihan Disiplin</h4>
+                    <h4 class="font-extrabold text-base sm:text-lg text-slate-950 dark:text-white mt-6 mb-2">Buah Dari Latihan Disiplin</h4>
                     <p class="mb-4">Kepala Sekolah beserta dewan guru memberikan apresiasi tinggi atas dedikasi Amabel yang rutin berlatih fisik di lapangan sekolah setiap sore hari didampingi guru olahraga.</p>
                     <p>Pencapaian ini semakin memperkuat nama SMPN 8 Tenggarong sebagai sekolah yang tidak hanya unggul secara akademik, tetapi juga melahirkan bibit-bibit atlet berbakat di bidang olahraga.</p>
                 `
@@ -1312,13 +1315,13 @@
                 title: "Cut Maharani Putri Sukses Meraih Juara Harapan 2 Ilustrasi FLS2N Kukar",
                 date: "06 Mei 2026",
                 category: "Seni & Kreativitas",
-                categoryBg: "bg-sky-600",
+                categoryBg: "bg-sky-700",
                 author: "Bidang Seni & Budaya",
                 image: "juara2lombailustrasifls3n.jpeg",
                 content: `
                     <p class="mb-4">Tenggarong — Kreativitas tanpa batas kembali dibuktikan oleh Cut Maharani Putri. Melalui goresan tangan yang penuh makna dan estetika, ia berhasil meraih predikat <strong>Juara Harapan 2 Lomba Ilustrasi</strong> dalam Festival Lomba Seni Siswa Nasional (FLS2N) tingkat Kabupaten Kutai Kartanegara.</p>
                     <p class="mb-4">Karya ilustrasi yang dibuat Cut Maharani mengangkat tema pelestarian budaya lokal berpadu dengan imajinasi masa depan, yang dinilai sangat memukau oleh dewan juri profesional.</p>
-                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Menggali Potensi Seni Rupa Siswa</h4>
+                    <h4 class="font-extrabold text-base sm:text-lg text-slate-950 dark:text-white mt-6 mb-2">Menggali Potensi Seni Rupa Siswa</h4>
                     <p class="mb-4">Pihak sekolah senantiasa memfasilitasi bakat seni rupa dan desain siswa melalui kegiatan ekstrakurikuler seni rupa, sehingga siswa dapat menyalurkan ekspresi kreatif mereka ke ajang yang lebih tinggi.</p>
                     <p>Selamat kepada Cut Maharani Putri atas prestasi membanggakan ini! Semoga terus berkarya dan mengharumkan nama sekolah.</p>
                 `
@@ -1327,13 +1330,13 @@
                 title: "Rafael Raditya Tampilkan Performa Memukau & Raih Juara 2 Mendongeng FLS2N Kukar",
                 date: "06 Mei 2026",
                 category: "Seni & Sastra",
-                categoryBg: "bg-indigo-600",
+                categoryBg: "bg-indigo-700",
                 author: "Bidang Sastra & Bahasa",
                 image: "rafaelradityajuara2mendongengfls3n.jpeg",
                 content: `
                     <p class="mb-4">Tenggarong — Suasana panggung FLS2N tingkat Kabupaten Kutai Kartanegara mendadak hidup ketika Rafael Raditya membawakan cerita rakyat dengan ekspresi dan penjiwaan yang luar biasa. Penampilan tersebut mengantarkannya meraih posisi <strong>Juara 2 Lomba Mendongeng</strong>.</p>
                     <p class="mb-4">Dengan intonasi suara yang dinamis, mimik wajah yang ekspresif, serta penguasaan panggung yang matang, Rafael berhasil memikat hati para juri dan penonton yang hadir.</p>
-                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Melestarikan Sastra dan Budaya Lisan</h4>
+                    <h4 class="font-extrabold text-base sm:text-lg text-slate-950 dark:text-white mt-6 mb-2">Melestarikan Sastra dan Budaya Lisan</h4>
                     <p class="mb-4">Lomba mendongeng merupakan salah satu media efektif dalam menanamkan nilai moral sekaligus melestarikan cerita rakyat nusantara, khususnya budaya Kutai.</p>
                     <p>Keluarga besar SMP Negeri 8 Tenggarong menyampaikan rasa bangga dan apresiasi mendalam atas pencapaian gemilang Rafael Raditya.</p>
                 `
@@ -1342,13 +1345,13 @@
                 title: "Selamat & Sukses Zahra Adelia Putri Atas Diterimanya di SMAN 10 Samarinda",
                 date: "04 Mei 2026",
                 category: "Kelulusan",
-                categoryBg: "bg-emerald-600",
+                categoryBg: "bg-emerald-700",
                 author: "Humas Sekolah & Jaringan Alumni",
                 image: "zahraadeliaputrilulusdisma10samarinda.jpeg",
                 content: `
                     <p class="mb-4">Tenggarong — Kabar gembira dan membanggakan datang dari salah satu siswi kelas akhir SMP Negeri 8 Tenggarong tahun ajaran 2025/2026, Zahra Adelia Putri, yang resmi dinyatakan lulus dan diterima di sekolah unggulan <strong>SMA Negeri 10 Samarinda</strong>.</p>
                     <p class="mb-4">Keberhasilan ini diraih melalui proses seleksi akademik dan tes ketat yang bersaing dengan ratusan lulusan SMP terbaik dari berbagai kabupaten/kota di Kalimantan Timur.</p>
-                    <h4 class="font-bold text-base sm:text-lg text-slate-900 dark:text-white mt-6 mb-2">Bukti Mutu Lulusan Berkualitas</h4>
+                    <h4 class="font-extrabold text-base sm:text-lg text-slate-950 dark:text-white mt-6 mb-2">Bukti Mutu Lulusan Berkualitas</h4>
                     <p class="mb-4">Kepala SMPN 8 Tenggarong, Syaifullah, S.Pd., menyampaikan bahwa pencapaian ini merupakan bukti nyata dari dedikasi dewan guru dalam memberikan pembelajaran berkualitas serta pembentukan karakter siswa yang tangguh.</p>
                     <p>Selamat kepada Zahra Adelia Putri! Semoga sukses menempuh jenjang pendidikan menengah atas dan terus mengukir prestasi gemilang di masa depan.</p>
                 `
